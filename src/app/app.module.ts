@@ -10,6 +10,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { GerundComponent } from './components/pages/gerund/gerund.component';
 import { InstitutionsComponent } from './components/pages/institutions/institutions.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { ErrorComponent } from './components/pages/error/error.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     AboutComponent,
     GerundComponent,
     InstitutionsComponent,
-    ContactComponent
+    ContactComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
