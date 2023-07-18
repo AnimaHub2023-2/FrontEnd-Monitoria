@@ -35,3 +35,34 @@ a {
     height: 279px;
     filter: invert(1);
 }
+
+@media (max-width:860px ) {
+    .footer-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-logo {
+        height: 110px;
+        width: 110px;
+    }
+
+    .footer-links {
+        margin: 41px 0 0 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:450px) {
+    .footer-logo-box span, a {
+        font-size: 12px;
+    }
+
+    .img-logo {
+        height: 70px;
+        width: 70px;
+    }
+}
