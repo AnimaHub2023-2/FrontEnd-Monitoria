@@ -2,3 +2,9 @@
     min-height: 70vh;
     background-color: #D0F1CD;;
 }
+
+@media (max-width:660px) {
+    .box-contain{
+        min-height: 60vh;
+    }
+}

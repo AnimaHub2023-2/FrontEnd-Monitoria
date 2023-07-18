@@ -20,7 +20,6 @@
 .error-text-box p:nth-child(3) {
     color: #9CC766;
     text-align: center;
-    width: 611px;
     font-size: 31px;
     font-weight: 400;
 }
@@ -63,4 +62,18 @@
 
 .error-button-box button:nth-child(2):hover {
     background: #b6e1b5;;
+}
+
+@media (max-width:660px) {
+    .error-text-box p:first-child, p:nth-child(2) {
+        font-size: 62px;
+    }
+    .error-text-box p:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .error-button-box {
+        gap: 35px;
+        margin-top: 90px;
+    }
 }
