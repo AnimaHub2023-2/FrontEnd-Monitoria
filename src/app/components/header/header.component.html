@@ -4,21 +4,45 @@
             <img src="../../../assets/logoAcolher.png" alt="Logo Acolher">
         </a>
     </div>
-    <ul>
-        <li>
-            <a routerLink="/">Início</a>
-        </li>
-        <li>
-            <a routerLink="/Sobre">Sobre</a>
-        </li>
-        <li>
-            <a routerLink="/Gerundio">Gerúndios</a>
-        </li>
-        <li>
-            <a routerLink="/Instituicoes">Instituições</a>
-        </li>
-        <li>
-            <a routerLink="/Contato">Contato</a>
-        </li>
-    </ul>
+    <button (click)="clicked()" class="menu-button">
+        <fa-icon [icon]="faBars" style="color: white"></fa-icon>
+    </button>
+    <div>
+        <ul>
+            <li>
+                <a routerLink="/">Início</a>
+            </li>
+            <li>
+                <a routerLink="/Sobre">Sobre</a>
+            </li>
+            <li>
+                <a routerLink="/Gerundio">Gerúndios</a>
+            </li>
+            <li>
+                <a routerLink="/Instituicoes">Instituições</a>
+            </li>
+            <li>
+                <a routerLink="/Contato">Contato</a>
+            </li>
+        </ul>
+    </div>
+    <div [ngStyle]="{'display': show ? 'inline' : 'none'}" class="menu">
+        <ul *ngIf="show" >
+            <li>
+                <a routerLink="/">Início</a>
+            </li>
+            <li>
+                <a routerLink="/Sobre">Sobre</a>
+            </li>
+            <li>
+                <a routerLink="/Gerundio">Gerúndios</a>
+            </li>
+            <li>
+                <a routerLink="/Instituicoes">Instituições</a>
+            </li>
+            <li>
+                <a routerLink="/Contato">Contato</a>
+            </li>
+        </ul>
+    </div>
 </nav>

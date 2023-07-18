@@ -11,6 +11,7 @@ import { GerundComponent } from './components/pages/gerund/gerund.component';
 import { InstitutionsComponent } from './components/pages/institutions/institutions.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ErrorComponent } from './components/pages/error/error.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ErrorComponent } from './components/pages/error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
