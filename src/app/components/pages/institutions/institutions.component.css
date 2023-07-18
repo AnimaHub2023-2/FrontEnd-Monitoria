@@ -1,0 +1,36 @@
+.institutions-box {
+    background: hsl(178, 100%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 65vh;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 73px;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+a {
+    height: 50px;
+    display: inline-flex;
+    width: 190px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.institutions-logo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    gap: 50px 30px;
+    justify-content: center;
+    width: 80%;
+}
