@@ -86,7 +86,6 @@ button, .menu {
         display: flex;
         flex-direction: column;
         width: 160px;
-        justify-content: start;
         height: 220px;
         gap: 0;
     }
