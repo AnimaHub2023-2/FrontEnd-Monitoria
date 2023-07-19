@@ -15,6 +15,8 @@ const routes: Routes = [
   {path:'Gerundio', component: GerundioComponent},
   {path:'Instituicoes', component: InstituicaoComponent},
   {path:'Contato', component: ContatoComponent},
+
+  // Pag Erro
   {path:'Error/404/notFounded', component: ErrorComponent},
 
   // Pag Seleção, FAQ
