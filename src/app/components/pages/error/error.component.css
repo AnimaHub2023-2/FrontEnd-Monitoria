@@ -1,3 +1,7 @@
+.error-box {
+    background-color: var(--light-green2);
+}
+
 .error-text-box {
     width: 100%;
     height: 50%;
@@ -11,14 +15,14 @@
 .error-text-box p:first-child, p:nth-child(2) {
     font-size: 102px;
     font-weight: 700;
-    background: linear-gradient(180deg, #63C4D4 0%, #B4D172 100%);
+    background: var(--text-linear-green);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .error-text-box p:nth-child(3) {
-    color: #9CC766;
+    color: var(--medium-green);
     text-align: center;
     font-size: 31px;
     font-weight: 400;
@@ -33,35 +37,6 @@
     align-items: center;
     justify-content: center;
     gap: 150px;
-}
-
-.error-button-box button {
-    width: 135px;
-    height: 50px;
-    border-radius: 25px;
-    border: 2px solid #00716D;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    transition: 0.4s;
-}
-
-.error-button-box button:first-child {
-    background: #00716D;
-    color: #fff;
-}
-
-.error-button-box button:first-child:hover {
-    background: #015d5a;
-}
-
-.error-button-box button:nth-child(2) {
-    background: transparent;
-    color: #00716D;
-}
-
-.error-button-box button:nth-child(2):hover {
-    background: #b6e1b5;;
 }
 
 @media (max-width:660px) {

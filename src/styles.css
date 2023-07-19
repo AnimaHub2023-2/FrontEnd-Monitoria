@@ -8,3 +8,68 @@
 a {
     text-decoration: none;
 }
+
+/* VARIAVEIS DE CORES */
+:root {
+    --background-linear-green: linear-gradient(225deg, #9CC766 0%, #C7F88A 33.33%, #9BF8F4 71.88%, #00E2DA 100%);
+    --text-linear-green: linear-gradient(180deg, #63C4D4 0%, #B4D172 100%);
+
+    --dark-green: #00716D;
+    --dark-green2: #009D98;
+    --medium-green: #9CC766;
+    --light-green:#b6e1b5;
+    --light-green2: #D0F1CD;
+
+    --font-green: #4F8310;
+    --font-dark-gray: #4B4B4B;
+    --font-gray: #838383;
+
+    --white: #fff;
+    --black: #000
+}
+
+/* borda padrão pag, contato, e outros */
+
+.border {
+    padding: 40px 50px;
+    background: var(--background-linear-green);
+    height: 65vh;
+}
+
+.main {
+    background-color: var(--white);
+    height: 100%;
+    border-radius: 60px;
+    padding: 50px;
+}
+
+/* BOTÕES PADRÃO */
+
+.button {
+    width: 135px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid var(--dark-green);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.model-one {
+    background: var(--dark-green);
+    color: var(--white);
+}
+
+.model-one:hover {
+    background: #015d5a;
+}
+
+.model-two {
+    background: transparent;
+    color: var(--dark-green);
+}
+
+.model-two:hover {
+    background: var(--light-green);
+}

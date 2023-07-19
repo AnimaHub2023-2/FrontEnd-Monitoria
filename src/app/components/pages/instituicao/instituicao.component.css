@@ -1,5 +1,5 @@
 .institutions-box {
-    background: hsl(178, 100%, 31%);
+    background: var(--dark-green2);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 h1 {
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     font-size: 73px;
     text-align: center;

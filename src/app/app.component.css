@@ -1,6 +1,7 @@
 .box-contain {
-    min-height: 65vh;
-    background-color: #D0F1CD;;
+    min-height: 64vh;
+    /* background: linear-gradient(225deg, #9CC766 0%, #C7F88A 33.33%, #9BF8F4 71.88%, #00E2DA 100%); */
+    background-color: aqua;
 }
 
 @media (max-width:660px) {

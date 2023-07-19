@@ -7,11 +7,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
-import { GerundComponent } from './components/pages/gerund/gerund.component';
-import { InstitutionsComponent } from './components/pages/institutions/institutions.component';
-import { ContactComponent } from './components/pages/contact/contact.component';
+import { GerundioComponent } from './components/pages/gerundio/gerundio.component';
+import { InstituicaoComponent } from './components/pages/instituicao/instituicao.component';
+import { ContatoComponent } from './components/pages/contato/contato.component';
 import { ErrorComponent } from './components/pages/error/error.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EditalComponent } from './components/pages/edital/edital.component';
+import { FaqComponent } from './components/pages/faq/faq.component';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +23,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    GerundComponent,
-    InstitutionsComponent,
-    ContactComponent,
-    ErrorComponent
+    GerundioComponent,
+    InstituicaoComponent,
+    ContatoComponent,
+    ErrorComponent,
+    EditalComponent,
+    FaqComponent,
+
   ],
   imports: [
     BrowserModule,

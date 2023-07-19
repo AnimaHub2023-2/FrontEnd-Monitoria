@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GerundComponent } from './gerund.component';
+import { EditalComponent } from './edital.component';
 
-describe('GerundComponent', () => {
-  let component: GerundComponent;
-  let fixture: ComponentFixture<GerundComponent>;
+describe('EditalComponent', () => {
+  let component: EditalComponent;
+  let fixture: ComponentFixture<EditalComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GerundComponent]
+      declarations: [EditalComponent]
     });
-    fixture = TestBed.createComponent(GerundComponent);
+    fixture = TestBed.createComponent(EditalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
