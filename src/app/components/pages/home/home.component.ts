@@ -14,11 +14,11 @@ export class HomeComponent {
   ) {}
 
   goSelection() {
-    this.router.navigate(['/Selecao-edital'])
+    this.router.navigate(['/selecao-edital'])
   }
 
   goFAQ() {
-    this.router.navigate(['/FAQ'])
+    this.router.navigate(['/faq'])
   }
 
 }

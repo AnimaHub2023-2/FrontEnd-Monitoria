@@ -11,20 +11,19 @@ import { FaqComponent } from './components/pages/faq/faq.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'Sobre', component: AboutComponent},
-  {path:'Gerundio', component: GerundioComponent},
-  {path:'Instituicoes', component: InstituicaoComponent},
-  {path:'Contato', component: ContatoComponent},
-
-  // Pag Erro
-  {path:'Error/404/notFounded', component: ErrorComponent},
+  {path:'sobre', component: AboutComponent},
+  {path:'gerundio', component: GerundioComponent},
+  {path:'instituicoes', component: InstituicaoComponent},
+  {path:'contato', component: ContatoComponent},
 
   // Pag Seleção, FAQ
-  {path:'Selecao-edital', component:EditalComponent},
-  {path:'FAQ', component:FaqComponent},
+  {path:'selecao-edital', component:EditalComponent},
+  {path:'faq', component:FaqComponent},
 
   // ROTAS IES
-  
+
+  // Pag Erro
+  {path:'**', component: ErrorComponent}
 ];
 
 @NgModule({
