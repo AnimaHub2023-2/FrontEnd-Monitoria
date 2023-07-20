@@ -1,0 +1,14 @@
+<div class="border">
+  <div class="main">
+    <div class="ies-nome">
+      <h1>{{ies.nome}}</h1>
+      <p>{{ies.descricao}}</p>
+    </div>
+    <div class="ies-campus">
+      <div *ngFor="let campus of ies.instituicoes; let index = index" class="ies">
+          <img src="{{ies.instituicoes[index].imagem}}" alt="">
+          <p>{{ies.instituicoes[index].nome}}</p>
+      </div>
+    </div>
+  </div>
+</div>

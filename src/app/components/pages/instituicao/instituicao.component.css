@@ -15,7 +15,7 @@ h1 {
     margin-top: 50px;
 }
 
-a {
+.list {
     height: 50px;
     display: inline-flex;
     width: 190px;

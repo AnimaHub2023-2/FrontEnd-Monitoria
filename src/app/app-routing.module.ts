@@ -8,6 +8,7 @@ import { ContatoComponent } from './components/pages/contato/contato.component';
 import { ErrorComponent } from './components/pages/error/error.component';
 import { EditalComponent } from './components/pages/edital/edital.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
+import { IesComponent } from './components/pages/ies/ies.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'faq', component:FaqComponent},
 
   // ROTAS IES
+  {path:'instituicoes/ies/:id', component: IesComponent},
 
   // Pag Erro
   {path:'**', component: ErrorComponent}

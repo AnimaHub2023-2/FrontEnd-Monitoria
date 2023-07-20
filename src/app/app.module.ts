@@ -14,6 +14,7 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EditalComponent } from './components/pages/edital/edital.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
+import { IesComponent } from './components/pages/ies/ies.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { FaqComponent } from './components/pages/faq/faq.component';
     ErrorComponent,
     EditalComponent,
     FaqComponent,
+    IesComponent,
 
   ],
   imports: [

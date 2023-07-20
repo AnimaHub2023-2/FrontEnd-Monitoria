@@ -33,12 +33,12 @@ a {
 .border {
     padding: 40px 50px;
     background: var(--background-linear-green);
-    height: 65vh;
+    min-height: 65vh;
 }
 
 .main {
     background-color: var(--white);
-    height: 100%;
+    min-height: 50vh;
     border-radius: 60px;
     padding: 50px;
 }
