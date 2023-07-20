@@ -126,7 +126,6 @@ export class InstituicaoComponent {
           nome: 'vila olimpia',
           imagem: '../../../../assets/IES/UAM/vila-olimpia/UAM-vila-olimpia.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -204,7 +203,6 @@ export class InstituicaoComponent {
           nome: 'uberlandia',
           imagem: '../../../../assets/IES/UNA/uberlandia/UNA-uberlandia.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -256,7 +254,6 @@ export class InstituicaoComponent {
           nome: 'tancredo neves',
           imagem: '../../../../assets/IES/UNIFACS/tancredo-neves/UNIFACS-tancredo-neves.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -278,7 +275,6 @@ export class InstituicaoComponent {
           nome: 'piedade',
           imagem: '../../../../assets/IES/UNIFG/piedade/UNIFG-piedade.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -300,7 +296,6 @@ export class InstituicaoComponent {
           nome: 'zona sul',
           imagem: '../../../../assets/IES/UNIRITTER/zona-sul/UNIRITTER-zona-sul.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -326,7 +321,6 @@ export class InstituicaoComponent {
           nome: 'sao bento do sul',
           imagem: '../../../../assets/IES/UNISOCIESC/sao-bento-do-sul/UNISOCIESC-sao-bento-do-sul.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -380,7 +374,6 @@ export class InstituicaoComponent {
           nome: 'tubarao',
           imagem: '../../../../assets/IES/UNISUL/tubarao/UNISUL-tubarao.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
@@ -418,7 +411,6 @@ export class InstituicaoComponent {
           nome: 'zona norte',
           imagem: '../../../../assets/IES/UNP/zona-norte/UNP-zona-norte.jpg'
         }
-        // Adicione mais instituições, se necessário, seguindo o padrão acima.
       ]
     },
     {
