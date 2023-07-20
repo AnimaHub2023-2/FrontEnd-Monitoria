@@ -1,4 +1,4 @@
-img {
+.logo {
   width: 463px;
   height: 309px;
   object-fit: cover;
@@ -15,6 +15,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
+}
+
+.ies-nome img {
+  width: 217px;
+  padding: 10px;
+}
+
+.ies-nome p {
+  color: var(--font-gray);
 }
 
 .ies-campus {

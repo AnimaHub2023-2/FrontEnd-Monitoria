@@ -14,6 +14,7 @@ export class InstituicaoComponent {
       id: 0,
       nome: 'AGES',
       descricao: 'Centro Universitário',
+      iesLogo: '../../../../assets/IES/AGES/logoAGES-ies.jpg',
       logo: '../../../../assets/IES/AGES/logoAGES.png',
       instituicoes: [
         {
@@ -42,6 +43,7 @@ export class InstituicaoComponent {
       id: 1,
       nome: 'FADERGS',
       descricao: 'Faculdade de Desenvolvimento do Rio Grande do Sul',
+      iesLogo: '../../../../assets/IES/FADERGS/logoFADERGS-ies.jpg',
       logo: '../../../../assets/IES/FADERGS/logoFADERGS.png',
       instituicoes: [
         {
@@ -54,6 +56,7 @@ export class InstituicaoComponent {
       id: 2,
       nome: 'FASEH',
       descricao: 'Faculdade da Saúde e Ecologia Humana',
+      iesLogo: '../../../../assets/IES/FASEH/logoFASEH-ies.jpg',
       logo: '../../../../assets/IES/FASEH/logoFASEH.png',
       instituicoes: [
         {
@@ -66,6 +69,7 @@ export class InstituicaoComponent {
       id: 3,
       nome: 'FPB',
       descricao: 'Faculdade Internacional da Paraíba',
+      iesLogo: '../../../../assets/IES/FPB/logoFPB-ies.jpg',
       logo: '../../../../assets/IES/FPB/logoFPB.png',
       instituicoes: [
         {
@@ -78,6 +82,7 @@ export class InstituicaoComponent {
       id: 4,
       nome: 'IBMR',
       descricao: 'Instituto Brasileiro de Medicina de Reabilitação',
+      iesLogo: '../../../../assets/IES/IBMR/logoIBMR-ies.jpg',
       logo: '../../../../assets/IES/IBMR/logoIBMR.png',
       instituicoes: [
         {
@@ -98,6 +103,7 @@ export class InstituicaoComponent {
       id: 5,
       nome: 'UAM',
       descricao: 'Universidade Anhembi Morumbi',
+      iesLogo: '../../../../assets/IES/UAM/logoUAM-ies.jpg',
       logo: '../../../../assets/IES/UAM/logoUAM.png',
       instituicoes: [
         {
@@ -127,6 +133,7 @@ export class InstituicaoComponent {
       id: 6,
       nome: 'UNA',
       descricao: 'Centro Universitário',
+      iesLogo: '../../../../assets/IES/UNA/logoUNA-ies.jpg',
       logo: '../../../../assets/IES/UNA/logoUNA.png',
       instituicoes: [
         {
@@ -204,6 +211,7 @@ export class InstituicaoComponent {
       id: 7,
       nome: 'UNIBH',
       descricao: 'Centro Universitário de Belo Horizonte',
+      iesLogo: '../../../../assets/IES/UNIBH/logoUNIBH-ies.jpg',
       logo: '../../../../assets/IES/UNIBH/logoUNIBH.png',
       instituicoes: [
         {
@@ -216,6 +224,7 @@ export class InstituicaoComponent {
       id: 8,
       nome: 'UNICURITIBA',
       descricao: 'Centro Universitário Curitiba',
+      iesLogo: '../../../../assets/IES/UNICURITIBA/logoUNICURITIBA-ies.jpg',
       logo: '../../../../assets/IES/UNICURITIBA/logoUNICURITIBA.png',
       instituicoes: [
         {
@@ -228,6 +237,7 @@ export class InstituicaoComponent {
       id: 9,
       nome: 'UNIFACS',
       descricao: 'Universidade Salvador',
+      iesLogo: '../../../../assets/IES/UNIFACS/logoUNIFACS-ies.jpg',
       logo: '../../../../assets/IES/UNIFACS/logoUNIFACS.png',
       instituicoes: [
         {
@@ -253,6 +263,7 @@ export class InstituicaoComponent {
       id: 10,
       nome: 'UNIFG',
       descricao: 'Centro Universitário Faculdade dos Guararapes',
+      iesLogo: '../../../../assets/IES/UNIFG/logoUNIFG-ies.jpg',
       logo: '../../../../assets/IES/UNIFG/logoUNIFG.png',
       instituicoes: [
         {
@@ -274,6 +285,7 @@ export class InstituicaoComponent {
       id: 11,
       nome: 'UNIRITTER',
       descricao: 'Centro Universitário Ritter dos Reis',
+      iesLogo: '../../../../assets/IES/UNIRITTER/logoUNIRITTER-ies.jpg',
       logo: '../../../../assets/IES/UNIRITTER/logoUNIRITTER.png',
       instituicoes: [
         {
@@ -295,6 +307,7 @@ export class InstituicaoComponent {
       id: 12,
       nome: 'UNISOCIESC',
       descricao: 'Sociedade Educacional de Santa Catarina',
+      iesLogo: '../../../../assets/IES/UNISOCIESC/logoUNISOCIESC-ies.jpg',
       logo: '../../../../assets/IES/UNISOCIESC/logoUNISOCIESC.png',
       instituicoes: [
         {
@@ -320,6 +333,7 @@ export class InstituicaoComponent {
       id: 13,
       nome: 'UNISUL',
       descricao: 'Universidade do Sul de Santa Catarina',
+      iesLogo: '../../../../assets/IES/UNISUL/logoUNISUL-ies.jpg',
       logo: '../../../../assets/IES/UNISUL/logoUNISUL.png',
       instituicoes: [
         {
@@ -373,6 +387,7 @@ export class InstituicaoComponent {
       id: 14,
       nome: 'UNP',
       descricao: 'Universidade Potiguar',
+      iesLogo: '../../../../assets/IES/UNP/logoUNP-ies.jpg',
       logo: '../../../../assets/IES/UNP/logoUNP.png',
       instituicoes: [
         {
@@ -410,6 +425,7 @@ export class InstituicaoComponent {
       id: 15,
       nome: 'USJT',
       descricao: 'Universidade São Judas Tadeu',
+      iesLogo: '../../../../assets/IES/UNP/logoUNP-ies.jpg',
       logo: '../../../../assets/IES/USJT/logoUSJT.png',
       instituicoes: [
         {
