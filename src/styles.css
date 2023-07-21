@@ -36,6 +36,8 @@ a {
     min-height: 65vh;
 }
 
+
+
 .main {
     background-color: var(--white);
     min-height: 50vh;
@@ -45,12 +47,13 @@ a {
 
 @media(max-width:860px) {
     .border {
-        padding: 0;
+        padding: 0 0;
     }
 
     .main {
         border-radius: 0;
     }
+
 }
 
 /* BOTÕES PADRÃO */

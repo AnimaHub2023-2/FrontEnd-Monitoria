@@ -1,9 +1,20 @@
 .footer-container {
     display: flex;
     padding: 0 5%;
+    position: relative;
     justify-content: space-around;
     height: 309px;
     background: linear-gradient(180deg, #B4F3AF 3.65%, #00E2DA 100%);
+}
+
+.footer-container::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background: linear-gradient(180deg, transparent,  #b4f3af);
 }
 
 .footer-links {
