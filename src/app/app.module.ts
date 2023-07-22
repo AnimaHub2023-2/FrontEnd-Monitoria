@@ -15,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EditalComponent } from './components/pages/edital/edital.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
 import { IesComponent } from './components/pages/ies/ies.component';
+import { AformComponent } from './components/pages/aform/aform.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { IesComponent } from './components/pages/ies/ies.component';
     EditalComponent,
     FaqComponent,
     IesComponent,
+    AformComponent,
 
   ],
   imports: [
