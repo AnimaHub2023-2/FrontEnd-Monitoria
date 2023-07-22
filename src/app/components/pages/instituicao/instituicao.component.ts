@@ -19,7 +19,7 @@ export class InstituicaoComponent {
       instituicoes: [
         {
           nome: 'Irece',
-          imagem: '../../../../assets/IES/AGES/Irece/AGES-irece.jpg'
+          imagem: '../../../../assets/IES/AGES/irece/AGES-irece.jpg'
         },
         {
           nome: 'Jacobina',
@@ -31,7 +31,7 @@ export class InstituicaoComponent {
         },
         {
           nome: 'Senhor do Bonfim',
-          imagem: '../../../../assets/IES/AGES/Senhor-do-Bonfim/AGES-senhor-do-bonfim.jpg'
+          imagem: '../../../../assets/IES/AGES/senhor-do-bonfim/AGES-senhor-do-bonfim.jpg'
         },
         {
           nome: 'Tucano',
@@ -87,7 +87,7 @@ export class InstituicaoComponent {
       instituicoes: [
         {
           nome: 'Barra',
-          imagem: '../../../../assets/IES/IBMR/Barra/IBMR-barra.jpg'
+          imagem: '../../../../assets/IES/IBMR/barra/IBMR-barra.jpg'
         },
         {
           nome: 'Botafogo',
@@ -244,7 +244,7 @@ export class InstituicaoComponent {
         },
         {
           nome: 'Prof. Barros',
-          imagem: '../../../../assets/IES/UNIFACS/Prof-Barros/UNIFACS-prof-barros.jpg'
+          imagem: '../../../../assets/IES/UNIFACS/prof-barros/UNIFACS-prof-barros.jpg'
         },
         {
           nome: 'Santa Monica',
