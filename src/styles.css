@@ -56,6 +56,13 @@ a {
 
 }
 
+@media (max-width:480px) {
+
+  .main {
+    padding: 50px 30px;
+  }
+}
+
 /* BOTÕES PADRÃO */
 
 .button {

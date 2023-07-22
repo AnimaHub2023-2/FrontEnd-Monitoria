@@ -66,11 +66,6 @@ button, .menu {
     img {
         width: 77px;
     }
-
-
-    nav::before {
-      top: 140px;
-    }
 }
 
 @media (max-width:660px) {
