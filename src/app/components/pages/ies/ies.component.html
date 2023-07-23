@@ -1,17 +1,17 @@
 <div class="border">
   <div class="main">
     <div class="ies-nome">
-      <img src="{{ies.iesLogo}}" alt="">
-      <p>{{ies.descricao}}</p>
+      <img src="{{ies.iesEnviar.iesLogo}}" alt="">
+      <p>{{ies.iesEnviar.descricao}}</p>
     </div>
     <div class="ies-campus">
       <div
-      *ngFor="let campus of ies.instituicoes; let index = index"
+      *ngFor="let campus of ies.iesEnviar.instituicoes; let index = index"
       class="ies"
-      (click)="goCampus(ies.instituicoes[index].nome)"
+      (click)="goCampus(ies.iesEnviar.instituicoes[index].nome)"
       >
-          <img src="{{ies.instituicoes[index].imagem}}" alt="{{ies.nome}}" class="logo">
-          <p>{{ies.instituicoes[index].nome}}</p>
+          <img src="{{ies.iesEnviar.instituicoes[index].imagem}}" alt="{{ies.iesEnviar.nome}}" class="logo">
+          <p>{{ies.iesEnviar.instituicoes[index].nome}}</p>
       </div>
     </div>
   </div>

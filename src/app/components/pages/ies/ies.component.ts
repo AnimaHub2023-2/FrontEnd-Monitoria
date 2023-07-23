@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
 import { Router } from '@angular/router';
-
-
 @Component({
   selector: 'app-ies',
   templateUrl: './ies.component.html',
@@ -10,19 +8,23 @@ import { Router } from '@angular/router';
 })
 export class IesComponent {
 
-  ies: any
-
+  ies:any
   constructor(
     private iesService: IesSelecionadaService,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit() {
+
     this.ies = this.iesService.getIesSelecionada()
+    console.log(this.ies.iesEnviar.instituicoes[1].nome)
+    console.log(this.ies)
+
   }
 
   goCampus(nome: string) {
-    this.router.navigate([`instituicoes/ies/${this.ies.id}/${nome}`])
+    console.log(nome)
+    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${nome}`])
   }
 
 }

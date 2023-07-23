@@ -469,6 +469,8 @@ export class InstituicaoComponent {
     private iesService: IesSelecionadaService
   ) {}
 
+
+
   onClick(id:number, nome:string):void {
     //salvando a informação da instituição selecionada
     const iesEnviar = this.iesList[id]
@@ -476,7 +478,10 @@ export class InstituicaoComponent {
     console.log(nome)
     console.log(id)
 
-    this.iesService.setIesSelecionada(iesEnviar)
+    const local = {iesEnviar}
+
+
+    this.iesService.setIesSelecionada(iesEnviar, local)
 
 
     this.router.navigate([`instituicoes/ies/${id}`])
