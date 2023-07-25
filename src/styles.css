@@ -11,7 +11,7 @@ a {
 
 /* VARIAVEIS DE CORES */
 :root {
-    --background-linear-green: linear-gradient(225deg, #9CC766 0%, #C7F88A 33.33%, #9BF8F4 71.88%, #00E2DA 100%);
+    --background-linear-green: linear-gradient(180deg, rgba(180,243,160,1) 0%, rgba(169,244,223,1) 48%, rgba(180,243,160,1) 100%);
     --text-linear-green: linear-gradient(180deg, #63C4D4 0%, #B4D172 100%);
 
     --dark-green: #00716D;

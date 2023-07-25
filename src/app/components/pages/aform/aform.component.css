@@ -1,23 +1,42 @@
-.main {
-    text-align: center;
-    background: none;
+.border {
+  text-align: center;
+  padding: 30px 0;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
 }
 
-.contain {
-    width: 40%;
-    margin: auto;
+.container-buttons-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container-input button {
+  margin-top: 10px;
+}
+
+.container-buttons {
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .input-dados {
-    width: 100%;
+    width: 390px;
     border-style: dashed;
     border-radius: 2%;
-    
+
 }
 
 mat-form-field {
