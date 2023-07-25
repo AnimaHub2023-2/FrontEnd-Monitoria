@@ -1,1 +1,133 @@
-<p>aform works!</p>
+<div class="border">
+    <div class="main">
+        <h1>Inscrição Alunos</h1>
+        <br><br><br> <!-- ARRUMAR ISSO NO CSS DEPOIS, PELO AMOR DE DEUS!!  -->
+        <div class="container">
+            <div class="dados-pessoais contain">
+                <fieldset class="input-dados">
+                    <legend> Dados Pessoais</legend>
+                    <div class="primeiro-nome">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Nome</mat-label>
+                            <input matInput placeholder="">
+                        </mat-form-field>
+                    </div>
+                    <div class="sobrenome">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Sobrenome</mat-label>
+                            <input matInput placeholder="">
+                        </mat-form-field>
+                    </div>
+                    <div class="ra">
+                        <mat-form-field appearance="fill">
+                            <mat-label>RA</mat-label>
+                            <input matInput placeholder="Registro Acadêmico">
+                        </mat-form-field>
+                    </div>
+                    <div class="email">
+                        <mat-form-field>
+                            <mat-label>Email Acadêmico</mat-label>
+                            <input matInput placeholder="anima@ulife.com.br">
+                        </mat-form-field>
+                    </div>
+                    <div class="semestre">
+                        <mat-form-field>
+                            <mat-label>Semestre</mat-label>
+                            <mat-select>
+                                <mat-option value="primeiro">1º Semestre</mat-option>
+                                <mat-option value="segundo">2º Semestre</mat-option>
+                                <mat-option value="terceiro">3º Semestre</mat-option>
+                                <mat-option value="quarto">4º Semestre</mat-option>
+                                <mat-option value="quinto">5º Semestre</mat-option>
+                                <mat-option value="sexto">6º Semestre</mat-option>
+                                <mat-option value="setimo">7º Semestre</mat-option>
+                                <mat-option value="oitavo">8º Semestre</mat-option>
+                                <mat-option value="nono">9º Semestre</mat-option>
+                                <mat-option value="decimo">10º Semestre</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="periodo">
+                        <mat-form-field>
+                            <mat-label>Período</mat-label>
+                            <mat-select>
+                                <mat-option value="manha">Matutino</mat-option>
+                                <mat-option value="tarde">Vespertino</mat-option>
+                                <mat-option value="noite">Nortuno</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="dados-acadêmicos contain">
+                <fieldset class="input-dados">
+                    <legend> Dados Acadêmicos</legend>
+                    <div class="ies">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Instiruição de Ensino Superior</mat-label>
+                            <input matInput placeholder="SELECIONADO VIA BD UC001">
+                        </mat-form-field>
+                    </div>
+                    <div class="campus">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Campus</mat-label>
+                            <input matInput placeholder="SELECIONADO VIA BD UC002">
+                        </mat-form-field>
+                    </div>
+                    <div class="curso">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Curso</mat-label>
+                            <input matInput placeholder="SELECIONADO VIA BD UC003">
+                        </mat-form-field>
+                    </div>
+                    <div class="monitor">
+                        <mat-form-field>
+                            <mat-label>Já foi monitor?</mat-label>
+                            <mat-select>
+                                <mat-option value="sim">Sim</mat-option>
+                                <mat-option value="nao">Não</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="cursou-essa-uc">
+                        <mat-form-field>
+                            <mat-label>Já cursou essa UC?</mat-label>
+                            <mat-select>
+                                <mat-option value="sim">Sim</mat-option>
+                                <mat-option value="nao">Não</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field>
+                            <mat-label>Área de conhecimento</mat-label>
+                            <textarea matInput
+                                placeholder="Descreva, brevemente, sua área de conhecimento sobre a UC"></textarea>
+                        </mat-form-field>
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+        </div>
+        
+        <br><br><br> <!-- ARRUMAR ISSO NO CSS DEPOIS, PELO AMOR DE DEUS!!  -->
+        <div class="contain">
+            <input type="file" name="" id="" style="margin-bottom:20px">
+            <button class="button model-one inscrever-me">INSCREVER-ME!</button>
+        </div>
+
+        <div class="contain">
+            <button class="button model-one" style="margin-top:20px">Voltar</button>
+            <button class="button model-two">Início</button>
+        </div>
+
+        <!-- LINHA 115 A 124 REFAZER TUDO. DEIXEI APENAS DE FORMA CONCEITUAL, 
+        PARA AJUDAR LEMBRAR O QUE EU PRENTENDIA FAZER.  -->
+
+
+
+
+    </div>
+</div>

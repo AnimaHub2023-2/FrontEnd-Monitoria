@@ -93,3 +93,6 @@ a {
 .model-two:hover {
     background: var(--light-green);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

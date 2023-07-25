@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select'
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +22,10 @@ import { EditalComponent } from './components/pages/edital/edital.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
 import { IesComponent } from './components/pages/ies/ies.component';
 import { AformComponent } from './components/pages/aform/aform.component';
+
+
+
+
 
 
 @NgModule({
@@ -38,9 +48,14 @@ import { AformComponent } from './components/pages/aform/aform.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule, MatInputModule, MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
+
