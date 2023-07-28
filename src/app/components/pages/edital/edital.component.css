@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 130px;
+  padding: 70px 50px;
+}
+
+.selecao-container, .edital-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.selecao-container p, .edital-container p {
+  color: var(--font-gray);
+}
+
+.edital-container p a {
+  color: var(--black);
+}
