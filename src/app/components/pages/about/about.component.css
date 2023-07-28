@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 130px;
+  padding: 70px 50px;
+}
+
+.about-container, .sobre-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-container p, .sobre-container p {
+  color: var(--font-gray);
+}
+
+.sobre-container p a {
+  color: var(--black);
+}
