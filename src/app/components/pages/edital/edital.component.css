@@ -20,3 +20,7 @@
 .edital-container p a {
   color: var(--black);
 }
+
+p {
+  line-height: 2;
+}

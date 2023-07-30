@@ -26,6 +26,7 @@ h1 {
   justify-content: space-evenly;
   font-size: 31px;
   color: var(--font-green);
+  font-weight: 300;
 }
 
 .home-buttons {

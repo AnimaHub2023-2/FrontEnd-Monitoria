@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./edital.component.css']
 })
 export class EditalComponent {
-
+  data = new Date()
+  year = String(this.data.getFullYear())
 }
