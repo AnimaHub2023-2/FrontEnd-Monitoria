@@ -485,6 +485,8 @@ export class InstituicaoComponent {
 
 
     this.router.navigate([`instituicoes/ies/${id}`])
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
 }

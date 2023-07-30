@@ -15,10 +15,14 @@ export class HomeComponent {
 
   goSelection() {
     this.router.navigate(['/selecao-edital'])
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
   goFAQ() {
     this.router.navigate(['/faq'])
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
 }
