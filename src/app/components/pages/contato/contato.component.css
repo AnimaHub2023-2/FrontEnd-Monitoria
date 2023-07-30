@@ -1,0 +1,43 @@
+.main {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 0;
+
+}
+
+.container h1, span {
+  text-align: center;
+  font-weight: 500;
+  color: var(--font-dark-gray);
+}
+
+span {
+  width: 235px;
+  line-height: 2;
+}
+
+.container-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.container-icons div {
+  color: #8d8ba7;
+  background-color: #e7e6f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}

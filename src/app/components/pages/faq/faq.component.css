@@ -1,0 +1,12 @@
+/* divs dentro da div main */
+.main div {
+  padding: 20px 0;
+}
+
+.main div p {
+  line-height: 1.5;
+}
+
+.main div p:nth-child(2) {
+ color: var(--font-gray);
+}
