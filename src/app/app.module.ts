@@ -22,6 +22,7 @@ import { EditalComponent } from './components/pages/edital/edital.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
 import { IesComponent } from './components/pages/ies/ies.component';
 import { AformComponent } from './components/pages/aform/aform.component';
+import { CursosComponent } from './components/pages/cursos/cursos.component';
 
 
 
@@ -43,6 +44,7 @@ import { AformComponent } from './components/pages/aform/aform.component';
     FaqComponent,
     IesComponent,
     AformComponent,
+    CursosComponent,
 
   ],
   imports: [

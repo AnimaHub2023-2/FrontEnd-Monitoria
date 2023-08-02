@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
+import { CampusSelecionadoService } from 'src/app/service/campus-selecionado.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-ies',
@@ -11,6 +12,7 @@ export class IesComponent {
   ies:any
   constructor(
     private iesService: IesSelecionadaService,
+    private campusService: CampusSelecionadoService,
     private router: Router,
   ) {}
 
@@ -22,9 +24,11 @@ export class IesComponent {
 
   }
 
-  goCampus(nome: string) {
-    console.log(nome)
+  goCampus(nome: string, index: number) {
+    this.campusService.setCampusSelecionado(index)
     this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${nome}`])
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
 }
