@@ -20,7 +20,7 @@ interface ExampleFlatNode {
 
 const TREE_DATA: FoodNode[] = [
   {
-    name: 'Fruit',
+    name: 'Direito',
     children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
   },
   {
@@ -72,7 +72,7 @@ export class CursosComponent {
 
   // O problema esta aqui dois contrutores, não entendi como arrumar isso
   // constructor() {
-  //   this.dataSource.data = TREE_DATA;
+  //   this.dataSource.data = TREE_DATA
   // }
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
@@ -89,7 +89,7 @@ export class CursosComponent {
    ) { }
 
   ngOnInit() {
-
+    this.dataSource.data = TREE_DATA;
     this.campusIndex = this.campusService.getCampusSelecionado()
     this.ies = this.iesService.getIesSelecionada()
 
