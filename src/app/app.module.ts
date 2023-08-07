@@ -5,7 +5,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select'
 
-
+import {MatTreeModule} from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -53,6 +55,7 @@ import { CursosComponent } from './components/pages/cursos/cursos.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatFormFieldModule, MatInputModule, MatSelectModule,
+    MatTreeModule, MatIconModule,MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

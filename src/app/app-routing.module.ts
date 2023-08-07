@@ -24,7 +24,7 @@ const routes: Routes = [
 
   // ROTAS IES
   {path:'instituicoes/ies/:id', component: IesComponent},
-  {path:'instituicoes/ies/:id/:instituicao.nome', component: CursosComponent},
+  {path:'instituicoes/ies/:id/:instituicoes', component: CursosComponent},
 
   // Pag Erro
   {path:'**', component: ErrorComponent}
