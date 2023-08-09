@@ -1,5 +1,9 @@
-img {
+.img-campus {
   width: 500px;
+  height: 300px;
+  border: var(--dark-green2) 3px solid;
+  border-radius: 24px;
+  object-fit: cover;
 }
 
 .cursos-container-top  {
@@ -15,4 +19,34 @@ img {
   gap: 20px;
   display: flex;
   flex-direction: column;
+}
+
+h2 {
+  color: var(--font-dark-gray);
+}
+
+h3 {
+  color: var(--font-gray);
+}
+
+.list {
+  /* background-color: var(--font-gray); */
+  margin: 5px 5px 0 5px;
+  padding-bottom: 3px;
+}
+
+.list::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 4px;
+  /* background: linear-gradient(90deg, var(--medium-green) 80%, var(--font-gray) 100%); */
+  background: linear-gradient(90deg, var(--medium-green) 70%, var(--white) 100%);
+  margin-top: 50px;
+  opacity: 0;
+  transition: .4s;
+}
+
+.list:hover::before {
+  opacity: 1; /* Quando o mouse estiver sobre, a opacidade se torna 1 */
 }

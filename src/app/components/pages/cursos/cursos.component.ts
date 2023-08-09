@@ -9,6 +9,7 @@ import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree'
 
 interface FoodNode {
   name: string;
+  icon?: string;
   children?: FoodNode[];
 }
 
@@ -20,22 +21,104 @@ interface ExampleFlatNode {
 
 const TREE_DATA: FoodNode[] = [
   {
-    name: 'Direito',
-    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
-  },
-  {
-    name: 'Vegetables',
+    name: 'Arquitetura e Urbanismo & Design',
+    icon: "../../../../assets/Icons/icone_arquitetura.svg",
     children: [
-      {
-        name: 'Green',
-        children: [{name: 'Broccoli'}, {name: 'Brussels sprouts'}],
-      },
-      {
-        name: 'Orange',
-        children: [{name: 'Pumpkins'}, {name: 'Carrots'}],
-      },
+      { name: 'Arquitetura' },
+      { name: 'Design de Interiores' },
+      { name: 'Design Gráfico' }
     ],
   },
+  {
+    name: 'Ciências Agrárias & Meio Ambiente',
+    icon: "../../../../assets/Icons/icone_agro.svg",
+    children: [
+      { name: 'Agronomia' },
+      { name: 'Gestão Ambiental' },
+      { name: 'Engenharia Florestal' }
+    ],
+  },
+  {
+    name: 'Ciências Biológicas e da Saúde',
+    icon: "../../../../assets/Icons/icone_saude.svg",
+    children: [
+      { name: 'Biomedicina' },
+      { name: 'Medicina' },
+      { name: 'Enfermagem' }
+    ],
+  },
+  {
+    name: 'Ciências Humanas',
+    icon: "../../../../assets/Icons/icone_educacao.svg",
+    children: [
+      { name: 'História' },
+      { name: 'Psicologia' },
+      { name: 'Sociologia' }
+    ],
+  },
+  {
+    name: 'Ciências Jurídicas',
+    icon: "../../../../assets/Icons/icone_direito.svg",
+    children: [
+      { name: 'Direito' },
+      { name: 'Ciências Criminais' },
+      { name: 'Relações Internacionais' }
+    ],
+  },
+  {
+    name: 'Ciências Médicas',
+    icon: "../../../../assets/Icons/icone_saude.svg",
+    children: [
+      { name: 'Medicina' },
+      { name: 'Odontologia' },
+      { name: 'Fisioterapia' }
+    ],
+  },
+  {
+    name: 'Comunicação & Artes',
+    icon: "../../../../assets/Icons/icone_artes.svg",
+    children: [
+      { name: 'Jornalismo' },
+      { name: 'Publicidade' },
+      { name: 'Cinema' }
+    ],
+  },
+  {
+    name: 'Engenharias',
+    icon: "../../../../assets/Icons/icone_engenharia.svg",
+    children: [
+      { name: 'Engenharia Civil' },
+      { name: 'Engenharia Elétrica' },
+      { name: 'Engenharia de Software' }
+    ],
+  },
+  {
+    name: 'Gestão & Negócios',
+    icon: "../../../../assets/Icons/icone_artes.svg",
+    children: [
+      { name: 'Administração' },
+      { name: 'Gestão de Recursos Humanos' },
+      { name: 'Marketing' }
+    ],
+  },
+  {
+    name: "T.I. & Computação",
+    icon: "../../../../assets/Icons/icone_tecnologia.svg",
+    children: [
+      { name: "Ciência da Computação" },
+      { name: "Engenharia de Software" },
+      { name: "Sistemas de Informação" }
+    ]
+  },
+  {
+    name: "Turismo & Hospitalidade",
+    icon: "../../../../assets/Icons/icone_turismo.svg",
+    children: [
+      { name: "Gestão em Turismo" },
+      { name: "Hotelaria" },
+      { name: "Eventos" }
+    ]
+  }
 ];
 
 @Component({

@@ -11,7 +11,9 @@
       </div>
 
       <div class="cursos-img">
-        <img src="{{ies.iesEnviar.instituicoes[campusIndex].imagem}}" alt="Campus {{ies.iesEnviar.instituicoes[campusIndex].nome}}">
+        <img src="{{ies.iesEnviar.instituicoes[campusIndex].imagem}}" alt="Campus {{ies.iesEnviar.instituicoes[campusIndex].nome}}"
+          class="img-campus"
+        >
       </div>
     </div>
 
@@ -23,19 +25,24 @@
           <!-- use a disabled button to provide padding for tree leaf -->
           <button mat-icon-button disabled></button>
           <a href="{{node.name}}">
-            {{node.name}}
+            <h3>
+              {{node.name}}
+            </h3>
           </a>
         </mat-tree-node>
         <!-- This is the tree node template for expandable nodes -->
-        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding class="list">
 
           <button mat-icon-button matTreeNodeToggle
             [attr.aria-label]="'Toggle ' + node.name ">
             <mat-icon class="mat-icon-rtl-mirror">
               {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
             </mat-icon>
+            <img src="{{node.icon}}" alt=""> <!--tentei, falhei miseravelmente-->>
           </button>
-          {{node.name}}
+          <h2>
+            {{node.name}}
+          </h2>
         </mat-tree-node>
       </mat-tree>
 
