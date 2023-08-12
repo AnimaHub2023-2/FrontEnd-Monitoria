@@ -8,7 +8,7 @@
       <div
       *ngFor="let campus of ies.iesEnviar.instituicoes; let index = index"
       class="ies"
-      (click)="goCampus(ies.iesEnviar.instituicoes[index].nome, index)"
+      (click)="goCampus(ies, index)"
       >
           <img src="{{ies.iesEnviar.instituicoes[index].imagem}}" alt="{{ies.iesEnviar.nome}}" class="logo">
           <p>{{ies.iesEnviar.instituicoes[index].nome}}</p>

@@ -3,15 +3,15 @@
     <div class="cursos-container-top">
       <div class="cursos-text">
         <h1>
-          {{ies.iesEnviar.nome}} {{ies.iesEnviar.instituicoes[campusIndex].nome}}
+          {{ies.iesEnviar.nome}} {{ies.iesEnviar.instituicoes[index].nome}}
         </h1>
 
         <p>Nome de algum Responsavel</p>
-        <p>Cursos com vagas para monitoria no Campus {{ies.iesEnviar.instituicoes[campusIndex].nome}}</p>
+        <p>Cursos com vagas para monitoria no ies {{ies.iesEnviar.instituicoes[index].nome}}</p>
       </div>
 
       <div class="cursos-img">
-        <img src="{{ies.iesEnviar.instituicoes[campusIndex].imagem}}" alt="Campus {{ies.iesEnviar.instituicoes[campusIndex].nome}}"
+        <img src="{{ies.iesEnviar.instituicoes[index].imagem}}" alt="ies {{ies.iesEnviar.instituicoes[index].nome}}"
           class="img-campus"
         >
       </div>
@@ -24,7 +24,7 @@
         <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
           <!-- use a disabled button to provide padding for tree leaf -->
           <button mat-icon-button disabled></button>
-          <h3 (click)="click(node.id)">
+          <h3 (click)="click(node.id, node.name)">
             {{node.name}}
           </h3>
         </mat-tree-node>

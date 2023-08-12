@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CampusSelecionadoService } from 'src/app/service/campus-selecionado.service';
 import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
+import { CursoSelecionadoService } from 'src/app/service/curso-selecionado.service';
 import { Router } from '@angular/router';
 // import tree
 // começo da tree
@@ -160,7 +161,7 @@ export class CursosComponent {
   // daqui para baixo, ja é outro codigo, para mostrar as informações da pagina
 
   ies: any
-  campusIndex!: number
+  index!: any
 
   nodeId!: number
 
@@ -168,6 +169,7 @@ export class CursosComponent {
 
     private iesService: IesSelecionadaService,
     private campusService: CampusSelecionadoService,
+    private cursoService: CursoSelecionadoService,
     private router: Router
   ) { }
 
@@ -177,23 +179,26 @@ export class CursosComponent {
 
   }
 
-  click(cursoId: any) {
+  click(cursoId: any, nodeName: string) {
     console.log(cursoId + ' Id curso')
-    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${this.ies.iesEnviar.instituicoes[this.campusIndex].nome}/${this.dataSource.data[this.nodeId].children![cursoId].name}`])
+    console.log(nodeName)
+    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${this.ies.iesEnviar.instituicoes[this.index].nome}/${this.dataSource.data[this.nodeId].children![cursoId].name}`])
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+    this.cursoService.setCursoSelecionado(this.dataSource.data[this.nodeId].children![cursoId])
   }
+
 
   ngOnInit() {
     this.dataSource.data = TREE_DATA;
-    this.campusIndex = this.campusService.getCampusSelecionado()
+    this.index = this.campusService.getCampusSelecionado()
     this.ies = this.iesService.getIesSelecionada()
 
     console.log(this.dataSource.data)
 
-    console.log(this.ies.iesEnviar.instituicoes[this.campusIndex].nome)
+    console.log(this.ies.iesEnviar.instituicoes[this.index].nome)
     console.log(this.ies)
-    console.log(this.campusIndex)
+    console.log(this.index)
   }
 }
 

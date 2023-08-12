@@ -19,14 +19,15 @@ export class IesComponent {
   ngOnInit() {
 
     this.ies = this.iesService.getIesSelecionada()
-    console.log(this.ies.iesEnviar.instituicoes[1].nome)
     console.log(this.ies)
 
   }
 
-  goCampus(nome: string, index: number) {
+  goCampus(ies:any, index:any) {
+    console.log(ies)
+    console.log(ies.iesEnviar.instituicoes[index].nome)
     this.campusService.setCampusSelecionado(index)
-    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${nome}`])
+    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${ies.iesEnviar.instituicoes[index].nome}`])
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
