@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CampusSelecionadoService } from 'src/app/service/campus-selecionado.service';
 import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
-
+import { Router } from '@angular/router';
 // import tree
 // começo da tree
 import { FlatTreeControl } from '@angular/cdk/tree';
@@ -9,114 +9,115 @@ import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree'
 
 interface FoodNode {
   name: string;
-  icon?: string;
+  id: number;
   children?: FoodNode[];
 }
 
 interface ExampleFlatNode {
   expandable: boolean;
   name: string;
+  id: number
   level: number;
 }
 
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Arquitetura e Urbanismo & Design',
-    icon: "../../../../assets/Icons/icone_arquitetura.svg",
+    id: 0,
     children: [
-      { name: 'Arquitetura' },
-      { name: 'Design de Interiores' },
-      { name: 'Design Gráfico' }
-    ],
-  },
-  {
-    name: 'Ciências Agrárias & Meio Ambiente',
-    icon: "../../../../assets/Icons/icone_agro.svg",
-    children: [
-      { name: 'Agronomia' },
-      { name: 'Gestão Ambiental' },
-      { name: 'Engenharia Florestal' }
-    ],
-  },
-  {
-    name: 'Ciências Biológicas e da Saúde',
-    icon: "../../../../assets/Icons/icone_saude.svg",
-    children: [
-      { name: 'Biomedicina' },
-      { name: 'Medicina' },
-      { name: 'Enfermagem' }
-    ],
-  },
-  {
-    name: 'Ciências Humanas',
-    icon: "../../../../assets/Icons/icone_educacao.svg",
-    children: [
-      { name: 'História' },
-      { name: 'Psicologia' },
-      { name: 'Sociologia' }
-    ],
-  },
-  {
-    name: 'Ciências Jurídicas',
-    icon: "../../../../assets/Icons/icone_direito.svg",
-    children: [
-      { name: 'Direito' },
-      { name: 'Ciências Criminais' },
-      { name: 'Relações Internacionais' }
-    ],
-  },
-  {
-    name: 'Ciências Médicas',
-    icon: "../../../../assets/Icons/icone_saude.svg",
-    children: [
-      { name: 'Medicina' },
-      { name: 'Odontologia' },
-      { name: 'Fisioterapia' }
-    ],
-  },
-  {
-    name: 'Comunicação & Artes',
-    icon: "../../../../assets/Icons/icone_artes.svg",
-    children: [
-      { name: 'Jornalismo' },
-      { name: 'Publicidade' },
-      { name: 'Cinema' }
-    ],
-  },
-  {
-    name: 'Engenharias',
-    icon: "../../../../assets/Icons/icone_engenharia.svg",
-    children: [
-      { name: 'Engenharia Civil' },
-      { name: 'Engenharia Elétrica' },
-      { name: 'Engenharia de Software' }
-    ],
-  },
-  {
-    name: 'Gestão & Negócios',
-    icon: "../../../../assets/Icons/icone_artes.svg",
-    children: [
-      { name: 'Administração' },
-      { name: 'Gestão de Recursos Humanos' },
-      { name: 'Marketing' }
-    ],
-  },
-  {
-    name: "T.I. & Computação",
-    icon: "../../../../assets/Icons/icone_tecnologia.svg",
-    children: [
-      { name: "Ciência da Computação" },
-      { name: "Engenharia de Software" },
-      { name: "Sistemas de Informação" }
+      { name: 'Arquitetura', id: 0 },
+      { name: 'Design de Interiores', id: 1 },
+      { name: 'Design Gráfico', id: 2 }
     ]
   },
   {
-    name: "Turismo & Hospitalidade",
-    icon: "../../../../assets/Icons/icone_turismo.svg",
+    name: 'Ciências Agrárias & Meio Ambiente',
+    id: 1,
     children: [
-      { name: "Gestão em Turismo" },
-      { name: "Hotelaria" },
-      { name: "Eventos" }
+      { name: 'Agronomia', id: 0 },
+      { name: 'Gestão Ambiental', id: 1 },
+      { name: 'Engenharia Florestal', id: 2 }
+    ]
+  },
+  {
+    name: 'Ciências Biológicas e da Saúde',
+    id: 2,
+    children: [
+      { name: 'Biomedicina', id: 0 },
+      { name: 'Medicina', id: 1 },
+      { name: 'Enfermagem', id: 2 }
+    ]
+  },
+  {
+    name: 'Ciências Humanas',
+    id: 3,
+    children: [
+      { name: 'História', id: 0 },
+      { name: 'Psicologia', id: 1 },
+      { name: 'Sociologia', id: 2 }
+    ]
+  },
+  {
+    name: 'Ciências Jurídicas',
+    id: 4,
+    children: [
+      { name: 'Direito', id: 0 },
+      { name: 'Ciências Criminais', id: 1 },
+      { name: 'Relações Internacionais', id: 2 }
+    ]
+  },
+  {
+    name: 'Ciências Médicas',
+    id: 5,
+    children: [
+      { name: 'Medicina', id: 0 },
+      { name: 'Odontologia', id: 1 },
+      { name: 'Fisioterapia', id: 2 }
+    ]
+  },
+  {
+    name: 'Comunicação & Artes',
+    id: 6,
+    children: [
+      { name: 'Jornalismo', id: 0 },
+      { name: 'Publicidade', id: 1 },
+      { name: 'Cinema', id: 2 }
+    ]
+  },
+  {
+    name: 'Engenharias',
+    id: 7,
+    children: [
+      { name: 'Engenharia Civil', id: 0 },
+      { name: 'Engenharia Elétrica', id: 1 },
+      { name: 'Engenharia de Software', id: 2 }
+    ]
+  },
+  {
+    name: 'Gestão & Negócios',
+    id: 8,
+    children: [
+      { name: 'Administração', id: 0 },
+      { name: 'Gestão de Recursos Humanos', id: 1 },
+      { name: 'Marketing', id: 2 }
+    ]
+  },
+  {
+    name: 'T.I. & Computação',
+    id: 9,
+    children: [
+      { name: 'Ciência da Computação', id: 0 },
+      { name: 'Engenharia de Software', id: 1 },
+      { name: 'Sistemas de Informação', id: 2 }
+    ]
+  },
+  {
+    name: 'Turismo & Hospitalidade',
+    id: 10,
+    children: [
+      { name: 'Gestão em Turismo', id: 0 },
+      { name: 'Hotelaria', id: 1 },
+      { name: 'Eventos', id: 2 }
     ]
   }
 ];
@@ -133,6 +134,7 @@ export class CursosComponent {
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,
+      id: node.id,
       level: level,
     }
   }
@@ -153,11 +155,6 @@ export class CursosComponent {
     this.treeControl, this.treeFlattener
   )
 
-  // O problema esta aqui dois contrutores, não entendi como arrumar isso
-  // constructor() {
-  //   this.dataSource.data = TREE_DATA
-  // }
-
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
 
   // daqui para baixo, ja é outro codigo, para mostrar as informações da pagina
@@ -165,16 +162,34 @@ export class CursosComponent {
   ies: any
   campusIndex!: number
 
-   constructor(
+  nodeId!: number
 
-     private iesService: IesSelecionadaService,
-     private campusService: CampusSelecionadoService,
-   ) { }
+  constructor(
+
+    private iesService: IesSelecionadaService,
+    private campusService: CampusSelecionadoService,
+    private router: Router
+  ) { }
+
+  clickH2(node: any) {
+    console.log(node.id + ' Id areas de cursos')
+    this.nodeId = node.id
+
+  }
+
+  click(cursoId: any) {
+    console.log(cursoId + ' Id curso')
+    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${this.ies.iesEnviar.instituicoes[this.campusIndex].nome}/${this.dataSource.data[this.nodeId].children![cursoId].name}`])
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit() {
     this.dataSource.data = TREE_DATA;
     this.campusIndex = this.campusService.getCampusSelecionado()
     this.ies = this.iesService.getIesSelecionada()
+
+    console.log(this.dataSource.data)
 
     console.log(this.ies.iesEnviar.instituicoes[this.campusIndex].nome)
     console.log(this.ies)

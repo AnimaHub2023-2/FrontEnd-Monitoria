@@ -24,17 +24,16 @@
         <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
           <!-- use a disabled button to provide padding for tree leaf -->
           <button mat-icon-button disabled></button>
-          <a href="{{node.name}}">
-            <h3>
-              {{node.name}}
-            </h3>
-          </a>
+          <h3 (click)="click(node.id)">
+            {{node.name}}
+          </h3>
         </mat-tree-node>
         <!-- This is the tree node template for expandable nodes -->
         <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding class="list">
 
           <button mat-icon-button matTreeNodeToggle
-            [attr.aria-label]="'Toggle ' + node.name ">
+            [attr.aria-label]="'Toggle ' + node.name "
+            (click)="clickH2(node)">
             <mat-icon class="mat-icon-rtl-mirror">
               {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
             </mat-icon>

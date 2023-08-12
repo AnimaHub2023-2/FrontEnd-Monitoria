@@ -10,6 +10,7 @@ import { EditalComponent } from './components/pages/edital/edital.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
 import { IesComponent } from './components/pages/ies/ies.component';
 import { CursosComponent } from './components/pages/cursos/cursos.component';
+import { MonitoriasComponent } from './components/pages/monitorias/monitorias.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   // ROTAS IES
   {path:'instituicoes/ies/:id', component: IesComponent},
   {path:'instituicoes/ies/:id/:instituicoes', component: CursosComponent},
+  {path:'instituicoes/ies/:id/:instituicoes/:curso', component: MonitoriasComponent},
 
   // Pag Erro
   {path:'**', component: ErrorComponent}

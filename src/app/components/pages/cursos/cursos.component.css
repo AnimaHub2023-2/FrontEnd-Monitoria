@@ -43,7 +43,7 @@ h3 {
   /* background: linear-gradient(90deg, var(--medium-green) 80%, var(--font-gray) 100%); */
   background: linear-gradient(90deg, var(--medium-green) 70%, var(--white) 100%);
   margin-top: 50px;
-  opacity: 0;
+  /* opacity: 0; */
   transition: .4s;
 }
 

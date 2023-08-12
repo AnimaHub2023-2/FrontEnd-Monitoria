@@ -25,6 +25,7 @@ import { FaqComponent } from './components/pages/faq/faq.component';
 import { IesComponent } from './components/pages/ies/ies.component';
 import { AformComponent } from './components/pages/aform/aform.component';
 import { CursosComponent } from './components/pages/cursos/cursos.component';
+import { MonitoriasComponent } from './components/pages/monitorias/monitorias.component';
 
 
 
@@ -47,6 +48,7 @@ import { CursosComponent } from './components/pages/cursos/cursos.component';
     IesComponent,
     AformComponent,
     CursosComponent,
+    MonitoriasComponent,
 
   ],
   imports: [
