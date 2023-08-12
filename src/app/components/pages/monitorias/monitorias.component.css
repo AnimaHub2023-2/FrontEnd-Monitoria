@@ -4,3 +4,33 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.box-monitoria {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+  flex-wrap: wrap;
+}
+
+.card-monitoria {
+  margin: 20px;
+  width: 220px;
+  background: var(--background-gray);
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+}
+
+.card-monitoria h5, .card-monitoria>p:last-child {
+  padding: 12px;
+}
+
+.card-monitoria div {
+  padding: 12px 0 12px 0;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}

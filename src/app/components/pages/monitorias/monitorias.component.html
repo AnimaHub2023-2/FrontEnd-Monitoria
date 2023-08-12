@@ -1,9 +1,31 @@
 <div class="border">
   <div class="main">
     <h2>Unidades Curriculares (UC) com vagas para monitoria no Curso de {{cursoSelecionado.name}} </h2>
-    <div>
 
+    <div class="box-monitoria" >
+      <div class="card-monitoria" *ngFor="let card of listMonitorias">
+        <h5>
+          {{listMonitorias[0].curso}}
+        </h5>
+
+        <div>
+          <p>
+            {{listMonitorias[0].modelo}}
+          </p>
+          <p>
+            {{listMonitorias[0].dia}}
+          </p>
+          <p>
+            {{listMonitorias[0].horario | date: 'HH:mm'}}
+          </p>
+        </div>
+
+        <p>
+          Professor: {{listMonitorias[0].professor}}
+        </p>
+      </div>
     </div>
-    <img src="{{iesList.iesEnviar.iesLogo}}" alt="a">
+
+    <img src="{{iesList.iesEnviar.iesLogo}}" alt="logo {{iesList.iesEnviar.nome}}">
   </div>
 </div>
