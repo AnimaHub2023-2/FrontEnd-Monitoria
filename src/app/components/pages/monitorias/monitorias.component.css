@@ -19,6 +19,10 @@
   width: 220px;
   background: var(--background-gray);
   text-align: center;
+
+  border-radius: 19px;
+  background: linear-gradient(145deg, #a2db90, #c1ffab);
+  box-shadow: 7px 7px 30px #80ad72, -7px -7px 30px #e8ffce;
 }
 
 p {
@@ -29,8 +33,12 @@ p {
   padding: 12px;
 }
 
+.card-monitoria h5 {
+  color: var(--font-dark-gray);
+}
+
 .card-monitoria div {
   padding: 12px 0 12px 0;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid var(--white);
+  border-top: 2px solid var(--white);
 }
