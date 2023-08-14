@@ -128,7 +128,9 @@ const icons = [
     icon: "../../../../assets/Icons/icone_arquitetura.svg"
   },
   {
-    icon: "../../../../assets/Icons/icone_agro.svg"
+    // acho q esse icon agro na vdd é icon de erro
+    // icon: "../../../../assets/Icons/icone_agro.svg"
+    icon: "../../../../assets/Icons/icone_arquitetura.svg"
   },
   {
     icon: "../../../../assets/Icons/icone_saude.svg"
