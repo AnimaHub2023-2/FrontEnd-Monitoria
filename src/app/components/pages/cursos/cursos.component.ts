@@ -123,6 +123,42 @@ const TREE_DATA: FoodNode[] = [
   }
 ];
 
+const icons = [
+  {
+    icon: "../../../../assets/Icons/icone_arquitetura.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_agro.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_saude.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_educacao.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_direito.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_saude.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_artes.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_engenharia.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_artes.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_tecnologia.svg"
+  },
+  {
+    icon: "../../../../assets/Icons/icone_turismo.svg",
+  },
+]
+
 @Component({
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
@@ -158,47 +194,43 @@ export class CursosComponent {
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
 
-  // daqui para baixo, ja é outro codigo, para mostrar as informações da pagina
+  //tree end
 
   ies: any
   index!: any
-
   nodeId!: number
 
-  constructor(
+  icon:any = icons
 
+  constructor(
     private iesService: IesSelecionadaService,
     private campusService: CampusSelecionadoService,
     private cursoService: CursoSelecionadoService,
     private router: Router
   ) { }
 
-  clickH2(node: any) {
-    console.log(node.id + ' Id areas de cursos')
-    this.nodeId = node.id
-
-  }
-
-  click(cursoId: any, nodeName: string) {
-    console.log(cursoId + ' Id curso')
-    console.log(nodeName)
-    this.router.navigate([`instituicoes/ies/${this.ies.iesEnviar.id}/${this.ies.iesEnviar.instituicoes[this.index].nome}/${this.dataSource.data[this.nodeId].children![cursoId].name}`])
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    this.cursoService.setCursoSelecionado(this.dataSource.data[this.nodeId].children![cursoId])
-  }
-
-
   ngOnInit() {
     this.dataSource.data = TREE_DATA;
     this.index = this.campusService.getCampusSelecionado()
     this.ies = this.iesService.getIesSelecionada()
 
+    console.log('Cursos disponiveis no campus ' + this.ies.iesEnviar.instituicoes[this.index].nome)
     console.log(this.dataSource.data)
+  }
 
-    console.log(this.ies.iesEnviar.instituicoes[this.index].nome)
-    console.log(this.ies)
-    console.log(this.index)
+  clickH2(node: any) {
+    console.log('Id da area de cursos selecionado = ' + node.id)
+    this.nodeId = node.id
+  }
+
+  click(cursoId: any, nodeName: string) {
+    console.log('Id do curso selecionado = ' + cursoId)
+    console.log('Curso Selecionado = ' + nodeName)
+    this.router.navigate([`instituicoes/${this.ies.iesEnviar.nome}/${this.ies.iesEnviar.instituicoes[this.index].nome.toLowerCase()}/${this.dataSource.data[this.nodeId].children![cursoId].name.toLowerCase()}`])
+    this.cursoService.setCursoSelecionado(this.dataSource.data[this.nodeId].children![cursoId])
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }
 

@@ -1,11 +1,10 @@
 <div class="institutions-box">
     <h1>Instituições</h1>
     <div class="institutions-logo">
-        <div class="list"
+        <div
+        class="list"
         *ngFor="let ies of iesList"
-        (click)="onClick(ies.id, ies.nome)"
-        >
-
+        (click)="onClick(ies.id, ies.nome)">
             <img src="{{ies.logo}}" alt="{{ies}}">
         </div>
     </div>

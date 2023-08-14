@@ -113,9 +113,5 @@ export class MonitoriasComponent {
     this.campusIndex = this.campusService.getCampusSelecionado()
     this.iesList = this.iesService.getIesSelecionada()
     this.cursoSelecionado = this.cursoService.getCursoSelecionado()
-
-    console.log(
-      this.cursoSelecionado
-    )
   }
 }

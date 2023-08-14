@@ -51,6 +51,12 @@ h3 {
   opacity: 1; /* Quando o mouse estiver sobre, a opacidade se torna 1 */
 }
 
+.img-icons {
+  width: 30px;
+  margin-right: 10px;
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(110deg);
+}
+
 @media (max-width:1100px) {
   .cursos-container-top {
     flex-direction: column;

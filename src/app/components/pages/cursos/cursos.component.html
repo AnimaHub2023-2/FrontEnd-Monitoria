@@ -3,7 +3,7 @@
     <div class="cursos-container-top">
       <div class="cursos-text">
         <h1>
-          {{ies.iesEnviar.nome}} {{ies.iesEnviar.instituicoes[index].nome}}
+          {{ies.iesEnviar.nome.toUpperCase()}} {{ies.iesEnviar.instituicoes[index].nome}}
         </h1>
 
         <p>Nome de algum Responsavel</p>
@@ -38,6 +38,7 @@
               {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
             </mat-icon>
           </button>
+          <img class="img-icons" src="{{icon[node.id].icon}}" alt="">
           <h2>
             {{node.name}}
           </h2>

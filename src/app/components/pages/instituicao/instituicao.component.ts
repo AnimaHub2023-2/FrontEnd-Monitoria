@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
 
+import { ies } from 'src/app/interface/ies';
+
 @Component({
   selector: 'app-instituicao',
   templateUrl: './instituicao.component.html',
@@ -9,10 +11,10 @@ import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
 })
 export class InstituicaoComponent {
 
-  iesList:Array<any> = [
+  iesList:Array<ies> = [
     {
       id: 0,
-      nome: 'AGES',
+      nome: 'ages',
       descricao: 'Centro Universitário',
       iesLogo: '../../../../assets/IES/AGES/logoAGES-ies.jpg',
       logo: '../../../../assets/IES/AGES/logoAGES.png',
@@ -41,7 +43,7 @@ export class InstituicaoComponent {
     },
     {
       id: 1,
-      nome: 'FADERGS',
+      nome: 'fadergs',
       descricao: 'Faculdade de Desenvolvimento do Rio Grande do Sul',
       iesLogo: '../../../../assets/IES/FADERGS/logoFADERGS-ies.jpg',
       logo: '../../../../assets/IES/FADERGS/logoFADERGS.png',
@@ -54,7 +56,7 @@ export class InstituicaoComponent {
     },
     {
       id: 2,
-      nome: 'FASEH',
+      nome: 'faseh',
       descricao: 'Faculdade da Saúde e Ecologia Humana',
       iesLogo: '../../../../assets/IES/FASEH/logoFASEH-ies.jpg',
       logo: '../../../../assets/IES/FASEH/logoFASEH.png',
@@ -67,7 +69,7 @@ export class InstituicaoComponent {
     },
     {
       id: 3,
-      nome: 'FPB',
+      nome: 'fpb',
       descricao: 'Faculdade Internacional da Paraíba',
       iesLogo: '../../../../assets/IES/FPB/logoFPB-ies.jpg',
       logo: '../../../../assets/IES/FPB/logoFPB.png',
@@ -80,7 +82,7 @@ export class InstituicaoComponent {
     },
     {
       id: 4,
-      nome: 'IBMR',
+      nome: 'ibmr',
       descricao: 'Instituto Brasileiro de Medicina de Reabilitação',
       iesLogo: '../../../../assets/IES/IBMR/logoIBMR-ies.jpg',
       logo: '../../../../assets/IES/IBMR/logoIBMR.png',
@@ -101,7 +103,7 @@ export class InstituicaoComponent {
     },
     {
       id: 5,
-      nome: 'UAM',
+      nome: 'uam',
       descricao: 'Universidade Anhembi Morumbi',
       iesLogo: '../../../../assets/IES/UAM/logoUAM-ies.jpg',
       logo: '../../../../assets/IES/UAM/logoUAM.png',
@@ -130,7 +132,7 @@ export class InstituicaoComponent {
     },
     {
       id: 6,
-      nome: 'UNA',
+      nome: 'una',
       descricao: 'Centro Universitário',
       iesLogo: '../../../../assets/IES/UNA/logoUNA-ies.jpg',
       logo: '../../../../assets/IES/UNA/logoUNA.png',
@@ -207,7 +209,7 @@ export class InstituicaoComponent {
     },
     {
       id: 7,
-      nome: 'UNIBH',
+      nome: 'unibh',
       descricao: 'Centro Universitário de Belo Horizonte',
       iesLogo: '../../../../assets/IES/UNIBH/logoUNIBH-ies.jpg',
       logo: '../../../../assets/IES/UNIBH/logoUNIBH.png',
@@ -220,7 +222,7 @@ export class InstituicaoComponent {
     },
     {
       id: 8,
-      nome: 'UNICURITIBA',
+      nome: 'unicuritiba',
       descricao: 'Centro Universitário Curitiba',
       iesLogo: '../../../../assets/IES/UNICURITIBA/logoUNICURITIBA-ies.jpg',
       logo: '../../../../assets/IES/UNICURITIBA/logoUNICURITIBA.png',
@@ -233,7 +235,7 @@ export class InstituicaoComponent {
     },
     {
       id: 9,
-      nome: 'UNIFACS',
+      nome: 'unifacs',
       descricao: 'Universidade Salvador',
       iesLogo: '../../../../assets/IES/UNIFACS/logoUNIFACS-ies.jpg',
       logo: '../../../../assets/IES/UNIFACS/logoUNIFACS.png',
@@ -258,7 +260,7 @@ export class InstituicaoComponent {
     },
     {
       id: 10,
-      nome: 'UNIFG',
+      nome: 'unifg',
       descricao: 'Centro Universitário Faculdade dos Guararapes',
       iesLogo: '../../../../assets/IES/UNIFG/logoUNIFG-ies.jpg',
       logo: '../../../../assets/IES/UNIFG/logoUNIFG.png',
@@ -279,7 +281,7 @@ export class InstituicaoComponent {
     },
     {
       id: 11,
-      nome: 'UNIRITTER',
+      nome: 'uniritter',
       descricao: 'Centro Universitário Ritter dos Reis',
       iesLogo: '../../../../assets/IES/UNIRITTER/logoUNIRITTER-ies.jpg',
       logo: '../../../../assets/IES/UNIRITTER/logoUNIRITTER.png',
@@ -300,7 +302,7 @@ export class InstituicaoComponent {
     },
     {
       id: 12,
-      nome: 'UNISOCIESC',
+      nome: 'unisociesc',
       descricao: 'Sociedade Educacional de Santa Catarina',
       iesLogo: '../../../../assets/IES/UNISOCIESC/logoUNISOCIESC-ies.jpg',
       logo: '../../../../assets/IES/UNISOCIESC/logoUNISOCIESC.png',
@@ -325,7 +327,7 @@ export class InstituicaoComponent {
     },
     {
       id: 13,
-      nome: 'UNISUL',
+      nome: 'unisul',
       descricao: 'Universidade do Sul de Santa Catarina',
       iesLogo: '../../../../assets/IES/UNISUL/logoUNISUL-ies.jpg',
       logo: '../../../../assets/IES/UNISUL/logoUNISUL.png',
@@ -378,7 +380,7 @@ export class InstituicaoComponent {
     },
     {
       id: 14,
-      nome: 'UNP',
+      nome: 'unp',
       descricao: 'Universidade Potiguar',
       iesLogo: '../../../../assets/IES/UNP/logoUNP-ies.jpg',
       logo: '../../../../assets/IES/UNP/logoUNP.png',
@@ -415,7 +417,7 @@ export class InstituicaoComponent {
     },
     {
       id: 15,
-      nome: 'USJT',
+      nome: 'usjt',
       descricao: 'Universidade São Judas Tadeu',
       iesLogo: '../../../../assets/IES/USJT/logoUSJT-ies.jpg',
       logo: '../../../../assets/IES/USJT/logoUSJT.png',
@@ -469,24 +471,19 @@ export class InstituicaoComponent {
     private iesService: IesSelecionadaService
   ) {}
 
-
-
   onClick(id:number, nome:string):void {
-    //salvando a informação da instituição selecionada
     const iesEnviar = this.iesList[id]
+
+    console.log('ies Selecionada abaixo')
     console.log(iesEnviar)
-    console.log(nome)
-    console.log(id)
 
     const local = {iesEnviar}
 
-
     this.iesService.setIesSelecionada(iesEnviar, local)
 
+    this.router.navigate([`instituicoes/${nome}`])
 
-    this.router.navigate([`instituicoes/ies/${id}`])
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-
 }
