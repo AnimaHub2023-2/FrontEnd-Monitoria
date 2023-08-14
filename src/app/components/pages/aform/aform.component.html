@@ -1,5 +1,5 @@
 <div class="border">
-    <h1>Inscrição Alunos</h1>
+    <h1 (click)="teste()">Inscrição Alunos</h1>
 
     <div class="container">
         <div class="dados-pessoais contain">
@@ -64,7 +64,7 @@
                 <div class="ies">
                     <mat-form-field appearance="fill">
                         <mat-label>Instituição de Ensino Superior</mat-label>
-                        <input matInput placeholder="SELECIONADO VIA BD UC001">
+                        <input matInput value="{{nome.toUpperCase()}}" readonly>
                     </mat-form-field>
                 </div>
                 <div class="campus">
