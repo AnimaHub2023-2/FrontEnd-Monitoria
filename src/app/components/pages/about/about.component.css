@@ -8,6 +8,8 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .main p:nth-child(2) {
   text-align: center;
   padding: 25px 0;
@@ -26,4 +28,10 @@ p {
 span {
   color: var(--black);
   font-weight: 600;
+}
+
+@media (max-width:860px) {
+  .main {
+    padding: 50px 30px;
+  }
 }

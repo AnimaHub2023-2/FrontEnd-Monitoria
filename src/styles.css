@@ -55,15 +55,17 @@ a {
 
     .main {
         border-radius: 0;
+        padding: 50px 0;
+
     }
 
 }
 
 @media (max-width:480px) {
 
-  .main {
+  /* .main {
     padding: 50px 30px;
-  }
+  } */
 }
 
 /* BOTÕES PADRÃO */

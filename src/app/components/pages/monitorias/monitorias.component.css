@@ -5,8 +5,14 @@
   flex-direction: column;
 }
 
+h2 {
+  text-align: center;
+  padding: 0 30px;
+}
+
 .box-monitoria {
   width: 100%;
+  max-width: 1400px;
   display: flex;
   align-items: center;
   justify-content: center;

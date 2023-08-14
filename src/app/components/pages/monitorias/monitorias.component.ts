@@ -53,6 +53,38 @@ const monitorias = [
     horario: 1900,
     professor: 'Mario Santos'
   },
+  {
+    id: 1,
+    curso: 'Modelagem de Software',
+    modelo: 'Online',
+    dia: 'Terça-feira',
+    horario: 1900,
+    professor: 'Mario Santos'
+  },
+  {
+    id: 1,
+    curso: 'Modelagem de Software',
+    modelo: 'Online',
+    dia: 'Terça-feira',
+    horario: 1900,
+    professor: 'Mario Santos'
+  },
+  {
+    id: 1,
+    curso: 'Modelagem de Software',
+    modelo: 'Online',
+    dia: 'Terça-feira',
+    horario: 1900,
+    professor: 'Mario Santos'
+  },
+  {
+    id: 1,
+    curso: 'Modelagem de Software',
+    modelo: 'Online',
+    dia: 'Terça-feira',
+    horario: 1900,
+    professor: 'Mario Santos'
+  },
 ]
 @Component({
   selector: 'app-monitorias',
