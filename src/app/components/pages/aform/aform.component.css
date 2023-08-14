@@ -5,6 +5,11 @@
 
 h1 {
   margin-bottom: 20px;
+  font-size: 40px;
+  background: var(--dark-green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -32,12 +37,27 @@ h1 {
   flex-direction: column;
 }
 
+.container-input p {
+  margin-bottom: 10px;
+}
+
 .input-dados {
     width: 390px;
     border-style: dashed;
     border-radius: 2%;
 
 }
+
+.dados-pessoais .input-dados div {
+
+  padding-bottom: 13px;
+  
+
+}
+
+/* .sobrenome {
+  padding-bottom: 75px;
+} */
 
 mat-form-field {
     width: 70%;

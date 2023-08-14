@@ -3,7 +3,7 @@
     <h2>Unidades Curriculares (UC) com vagas para monitoria no Curso de {{cursoSelecionado.name}} </h2>
 
     <div class="box-monitoria" >
-      <div class="card-monitoria" *ngFor="let card of listMonitorias">
+      <div class="card-monitoria" *ngFor="let card of listMonitorias" (click)="goForm(card.id)">
         <h5>
           {{listMonitorias[0].curso}}
         </h5>

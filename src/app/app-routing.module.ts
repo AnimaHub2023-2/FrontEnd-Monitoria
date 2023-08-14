@@ -11,6 +11,7 @@ import { FaqComponent } from './components/pages/faq/faq.component';
 import { IesComponent } from './components/pages/ies/ies.component';
 import { CursosComponent } from './components/pages/cursos/cursos.component';
 import { MonitoriasComponent } from './components/pages/monitorias/monitorias.component';
+import { AformComponent } from './components/pages/aform/aform.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -27,6 +28,9 @@ const routes: Routes = [
   {path:'instituicoes/:nome', component: IesComponent},
   {path:'instituicoes/:nome/:campus', component: CursosComponent},
   {path:'instituicoes/:nome/:campus/:curso', component: MonitoriasComponent},
+
+  // Form Aluno
+  {path:'cadastro/aluno/:aula', component: AformComponent},
 
   // Pag Erro
   {path:'**', component: ErrorComponent}

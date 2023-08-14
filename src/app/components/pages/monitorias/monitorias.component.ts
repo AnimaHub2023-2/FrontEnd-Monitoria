@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { IesSelecionadaService } from 'src/app/service/ies-selecionada.service';
 import { CampusSelecionadoService } from 'src/app/service/campus-selecionado.service';
 import { CursoSelecionadoService } from 'src/app/service/curso-selecionado.service';
-
+import { Router } from '@angular/router';
 
 const monitorias = [
   {
-    id: 1,
+    id: 0,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -22,7 +22,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
     {
-    id: 1,
+    id: 2,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -30,7 +30,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
     {
-    id: 1,
+    id: 3,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -38,7 +38,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
     {
-    id: 1,
+    id: 4,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -46,7 +46,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
     {
-    id: 1,
+    id: 5,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -54,7 +54,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
   {
-    id: 1,
+    id: 6,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -62,7 +62,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
   {
-    id: 1,
+    id: 7,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -70,7 +70,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
   {
-    id: 1,
+    id: 8,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -78,7 +78,7 @@ const monitorias = [
     professor: 'Mario Santos'
   },
   {
-    id: 1,
+    id: 9,
     curso: 'Modelagem de Software',
     modelo: 'Online',
     dia: 'Terça-feira',
@@ -106,12 +106,17 @@ export class MonitoriasComponent {
   constructor(
     private campusService:CampusSelecionadoService,
     private iesService:IesSelecionadaService,
-    private cursoService:CursoSelecionadoService
+    private cursoService:CursoSelecionadoService,
+    private router:Router
     ) {}
 
   ngOnInit() {
     this.campusIndex = this.campusService.getCampusSelecionado()
     this.iesList = this.iesService.getIesSelecionada()
     this.cursoSelecionado = this.cursoService.getCursoSelecionado()
+  }
+
+  goForm(id:number) {
+    this.router.navigate([`cadastro/aluno/${this.listMonitorias[id].curso}`])
   }
 }
