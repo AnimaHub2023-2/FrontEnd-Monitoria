@@ -477,9 +477,7 @@ export class InstituicaoComponent {
     console.log('ies Selecionada abaixo')
     console.log(iesEnviar)
 
-    const local = {iesEnviar}
-
-    this.iesService.setIesSelecionada(iesEnviar, local)
+    this.iesService.setIesSelecionada(iesEnviar)
 
     this.router.navigate([`instituicoes/${nome}`])
 

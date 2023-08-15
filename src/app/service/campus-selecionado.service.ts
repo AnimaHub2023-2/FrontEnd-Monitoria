@@ -5,13 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class CampusSelecionadoService {
 
-  private chaveCampus = 'index'
-  private valorCampus: any
-  private campusSelecionado: any
+  private chaveCampus = '2-IndexInstituicoes'
+  private valorCampus!: number
 
   constructor() { }
 
-  setCampusSelecionado(campus:any) {
+  setCampusSelecionado(campus:number) {
     this.valorCampus = campus
     localStorage.setItem(this.chaveCampus, JSON.stringify(this.valorCampus));
   }

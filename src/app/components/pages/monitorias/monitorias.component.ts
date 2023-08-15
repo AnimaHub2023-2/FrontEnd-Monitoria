@@ -97,7 +97,6 @@ const monitorias = [
 export class MonitoriasComponent {
 
   campusIndex!:number
-  iesList!: any
 
   ies!:any
 
@@ -115,7 +114,7 @@ export class MonitoriasComponent {
 
   ngOnInit() {
     this.campusIndex = this.campusService.getCampusSelecionado()
-    this.iesList = this.iesService.getIesSelecionada()
+    this.ies = this.iesService.getIesSelecionada()
     this.cursoSelecionado = this.cursoService.getCursoSelecionado()
   }
 

@@ -3,15 +3,15 @@
     <div class="cursos-container-top">
       <div class="cursos-text">
         <h1>
-          {{ies.iesEnviar.nome.toUpperCase()}} {{ies.iesEnviar.instituicoes[index].nome}}
+          {{ies.nome.toUpperCase()}} {{ies.instituicoes[index].nome}}
         </h1>
 
         <p>Nome de algum Responsavel</p>
-        <p>Cursos com vagas para monitoria no ies {{ies.iesEnviar.instituicoes[index].nome}}</p>
+        <p>Cursos com vagas para monitoria no ies {{ies.instituicoes[index].nome}}</p>
       </div>
 
       <div class="cursos-img">
-        <img src="{{ies.iesEnviar.instituicoes[index].imagem}}" alt="ies {{ies.iesEnviar.instituicoes[index].nome}}"
+        <img src="{{ies.instituicoes[index].imagem}}" alt="ies {{ies.instituicoes[index].nome}}"
           class="img-campus"
         >
       </div>

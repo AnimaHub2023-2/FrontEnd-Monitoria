@@ -35,8 +35,8 @@ export class AformComponent {
     this.monitoria = this.monitoriaSeleciona.getMonitoriaSelecionado()
 
     this.campusIndex = this.campusSelecionado.getCampusSelecionado()
-    this.nome = this.ies.iesEnviar.nome
-    this.campus = this.ies.iesEnviar.instituicoes[0].nome
+    this.nome = this.ies.nome
+    this.campus = this.ies.instituicoes[0].nome
     this.curso = this.getCurso.name
   }
 }

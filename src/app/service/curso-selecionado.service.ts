@@ -5,9 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class CursoSelecionadoService {
 
-  private chaveCurso = 'campus'
+  private chaveCurso = '3-CursoSelecionado'
   private valorCurso: any
-  private cursoSelecionado: any
 
   constructor() { }
 

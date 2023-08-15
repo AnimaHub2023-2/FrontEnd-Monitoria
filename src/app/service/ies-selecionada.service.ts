@@ -5,20 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class IesSelecionadaService {
 
+  private chaveIes = '1-IES';
+  private valorIes: any;
 
-  private chaveLocalStorage = 'ies';
-  private iesSelecionada: any;
-  private local: any;
   constructor() { }
 
-  setIesSelecionada(ies: any, local: any): void {
-    this.iesSelecionada = ies;
-    this.local = local
-    localStorage.setItem(this.chaveLocalStorage, JSON.stringify(local));
+  setIesSelecionada(ies: any): void {
+    this.valorIes = ies;
+    localStorage.setItem(this.chaveIes, JSON.stringify(this.valorIes));
   }
 
   getIesSelecionada(): any {
-    const a = localStorage.getItem(this.chaveLocalStorage)
-    return this.iesSelecionada, a ? JSON.parse(a):null;
+    const a = localStorage.getItem(this.chaveIes)
+    return this.valorIes, a ? JSON.parse(a):null;
   }
 }

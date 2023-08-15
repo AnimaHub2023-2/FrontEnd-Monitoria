@@ -216,7 +216,7 @@ export class CursosComponent {
     this.index = this.campusService.getCampusSelecionado()
     this.ies = this.iesService.getIesSelecionada()
 
-    console.log('Cursos disponiveis no campus ' + this.ies.iesEnviar.instituicoes[this.index].nome)
+    console.log('Cursos disponiveis no campus ' + this.ies.instituicoes[this.index].nome)
     console.log(this.dataSource.data)
   }
 
@@ -228,7 +228,7 @@ export class CursosComponent {
   click(cursoId: any, nodeName: string) {
     console.log('Id do curso selecionado = ' + cursoId)
     console.log('Curso Selecionado = ' + nodeName)
-    this.router.navigate([`instituicoes/${this.ies.iesEnviar.nome}/${this.ies.iesEnviar.instituicoes[this.index].nome.toLowerCase()}/${this.dataSource.data[this.nodeId].children![cursoId].name.toLowerCase()}`])
+    this.router.navigate([`instituicoes/${this.ies.nome}/${this.ies.instituicoes[this.index].nome.toLowerCase()}/${this.dataSource.data[this.nodeId].children![cursoId].name.toLowerCase()}`])
     this.cursoService.setCursoSelecionado(this.dataSource.data[this.nodeId].children![cursoId])
 
     document.body.scrollTop = 0;
