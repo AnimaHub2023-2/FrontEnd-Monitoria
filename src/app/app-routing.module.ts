@@ -12,6 +12,7 @@ import { IesComponent } from './components/pages/ies/ies.component';
 import { CursosComponent } from './components/pages/cursos/cursos.component';
 import { MonitoriasComponent } from './components/pages/monitorias/monitorias.component';
 import { AformComponent } from './components/pages/aform/aform.component';
+import { PformComponent } from './components/pages/pform/pform.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -31,6 +32,9 @@ const routes: Routes = [
 
   // Form Aluno
   {path:'cadastro/aluno/:aula', component: AformComponent},
+
+  // Form Professor
+  {path:'professor/cadastro/monitoria', component: PformComponent},
 
   // Pag Erro
   {path:'**', component: ErrorComponent}

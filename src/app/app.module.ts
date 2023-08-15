@@ -26,6 +26,7 @@ import { IesComponent } from './components/pages/ies/ies.component';
 import { AformComponent } from './components/pages/aform/aform.component';
 import { CursosComponent } from './components/pages/cursos/cursos.component';
 import { MonitoriasComponent } from './components/pages/monitorias/monitorias.component';
+import { PformComponent } from './components/pages/pform/pform.component';
 
 
 
@@ -49,6 +50,7 @@ import { MonitoriasComponent } from './components/pages/monitorias/monitorias.co
     AformComponent,
     CursosComponent,
     MonitoriasComponent,
+    PformComponent,
 
   ],
   imports: [
