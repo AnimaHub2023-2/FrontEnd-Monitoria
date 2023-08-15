@@ -3,6 +3,10 @@
   padding: 30px 0;
 }
 
+.link {
+  margin: 0 50px;
+}
+
 h1 {
   margin-bottom: 20px;
   font-size: 40px;
@@ -51,7 +55,7 @@ h1 {
 .dados-pessoais .input-dados div {
 
   padding-bottom: 13px;
-  
+
 
 }
 

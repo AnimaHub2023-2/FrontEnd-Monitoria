@@ -1,9 +1,10 @@
-* {
-    font-size: 25px;
-    font-style: normal;
+#button-menu {
+  display: none;
 }
 
 nav {
+    font-size: 25px;
+    font-style: normal;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,12 +48,7 @@ a:hover {
     color: #abd17d;
 }
 
-button {
-    background: transparent;
-    border: none;
-}
-
-button, .menu {
+.menu {
     display: none;
 }
 
@@ -70,8 +66,8 @@ button, .menu {
 
 @media (max-width:660px) {
 
-    button {
-        display: inline;
+    #button-menu {
+      display: inline;
     }
 
     nav {
@@ -112,6 +108,7 @@ button, .menu {
 
     li:hover {
         background-color: #87a762;
+        border-radius: 4px;
     }
 
     a:hover {

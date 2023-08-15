@@ -1,5 +1,6 @@
 <div class="border">
-    <h1 (click)="teste()">Inscrição Alunos</h1>
+    <div class="link">{{ies.iesEnviar.nome.toUpperCase()}} / {{ies.iesEnviar.instituicoes[campusIndex].nome}} / {{campus}} / {{monitoria.curso}}</div>
+    <h1>Inscrição Alunos</h1>
 
     <div class="container">
         <div class="dados-pessoais contain">
@@ -70,13 +71,13 @@
                 <div class="campus">
                     <mat-form-field appearance="fill">
                         <mat-label>Campus</mat-label>
-                        <input matInput placeholder="SELECIONADO VIA BD UC002">
+                        <input matInput value="{{campus}}" readonly>
                     </mat-form-field>
                 </div>
                 <div class="curso">
                     <mat-form-field appearance="fill">
                         <mat-label>Curso</mat-label>
-                        <input matInput placeholder="SELECIONADO VIA BD UC003">
+                        <input matInput value="{{curso}}" readonly>
                     </mat-form-field>
                 </div>
                 <div class="monitor">

@@ -4,9 +4,12 @@
             <img src="../../../assets/selo-ecossistema-fade-verde-azul.svg" alt="Logo Anima">
         </a>
     </div>
-    <button (click)="clicked()" class="menu-button">
-        <fa-icon [icon]="faBars" style="color: white"></fa-icon>
-    </button>
+
+      <!-- styles.css código -->
+      <div (click)="clicked()" class="burger burger-arrow burger-squeeze" id="button-menu">
+        <div class="burger-lines"></div>
+      </div>
+
     <div>
         <ul>
             <li>

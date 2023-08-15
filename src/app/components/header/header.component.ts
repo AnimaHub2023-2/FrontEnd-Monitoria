@@ -1,26 +1,33 @@
 import { Component, HostListener } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent {
 
-  faBars = faBars
-  show = false
+  show:boolean = false
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.show = false; // Fecha o menu ao navegar para outro link
+        this.show = false
+        const botao = document.querySelector('#button-menu')
+
+        botao?.classList.remove('open')
+
       }
     })
   }
 
   clicked(): void {
     this.show = !this.show
+    const botao = document.querySelector('#button-menu')
+
+    botao?.classList.toggle('open')
+
   }
 
   // // Clique fora do menu, para fechá-lo
