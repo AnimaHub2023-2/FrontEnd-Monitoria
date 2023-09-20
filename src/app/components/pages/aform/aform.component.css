@@ -53,15 +53,9 @@ h1 {
 }
 
 .dados-pessoais .input-dados div {
-
   padding-bottom: 13px;
 
-
 }
-
-/* .sobrenome {
-  padding-bottom: 75px;
-} */
 
 mat-form-field {
     width: 70%;

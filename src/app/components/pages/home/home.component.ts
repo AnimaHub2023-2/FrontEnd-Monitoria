@@ -27,4 +27,10 @@ export class HomeComponent {
     document.documentElement.scrollTop = 0;
   }
 
+  goInstituicoes() {
+    this.router.navigate(['/instituicoes'])
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
 }

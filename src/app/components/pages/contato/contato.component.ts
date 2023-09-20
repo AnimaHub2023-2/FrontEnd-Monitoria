@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faFacebookF, faInstagram, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkSquareAlt} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contato',
@@ -12,5 +13,7 @@ facebook = faFacebookF
 instagram = faInstagram
 youtube = faYoutube
 linkedin = faLinkedinIn
+linktree = faExternalLinkSquareAlt
+
 
 }
