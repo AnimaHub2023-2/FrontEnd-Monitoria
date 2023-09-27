@@ -60,3 +60,38 @@ h1 {
 mat-form-field {
     width: 70%;
 }
+
+@media (max-width:1150px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dados-pessoais, .dados-academicos {
+    max-width: 690px;
+    width: 90%;
+  }
+
+  .input-dados {
+    width: 100%;
+  }
+
+  .container-buttons {
+    gap: 30px;
+    width: auto;
+  }
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  .ies, .primeiro-nome {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:450px) {
+  .link {
+    margin: 0 10px;
+  }
+}

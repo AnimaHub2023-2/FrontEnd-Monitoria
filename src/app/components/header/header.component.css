@@ -94,7 +94,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         width: 160px;
-        height: 220px;
+        max-height: 220px;
         gap: 0;
     }
 
