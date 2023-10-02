@@ -28,7 +28,8 @@ import { CursosComponent } from './components/pages/cursos/cursos.component';
 import { MonitoriasComponent } from './components/pages/monitorias/monitorias.component';
 import { PformComponent } from './components/pages/pform/pform.component';
 
-
+import {MatDatepickerModule} from '@angular/material/datepicker'
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 
@@ -59,7 +60,11 @@ import { PformComponent } from './components/pages/pform/pform.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatFormFieldModule, MatInputModule, MatSelectModule,
-    MatTreeModule, MatIconModule,MatButtonModule
+    MatTreeModule,
+    MatIconModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

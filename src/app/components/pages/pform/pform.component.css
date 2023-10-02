@@ -1,0 +1,93 @@
+.border {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    background: var(--dark-green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+  }
+  
+  .container-buttons-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .container-input button {
+    margin-top: 10px;
+  }
+  
+  .container-buttons {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .container-input p {
+    margin-bottom: 10px;
+  }
+  
+  .input-dados {
+      width: 390px;
+      border-style: dashed;
+      border-radius: 2%;
+      padding-top: 20px;
+  }
+  
+  .dados-pessoais .input-dados div {
+    padding-bottom: 13px;
+  
+  }
+  
+  mat-form-field {
+      width: 70%;
+  }
+  
+  @media (max-width:1150px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dados-pessoais, .dados-academicos {
+      max-width: 690px;
+      width: 90%;
+    }
+  
+    .input-dados {
+      width: 100%;
+    }
+  
+    .container-buttons {
+      gap: 30px;
+      width: auto;
+    }
+  
+    h1 {
+      margin: 20px 0;
+    }
+  
+    .ies, .primeiro-nome {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width:425px) {
+    mat-form-field {
+      width: 95%;
+    }
+  }

@@ -5,7 +5,6 @@
     <div class="container">
         <div class="dados-pessoais contain">
             <fieldset class="input-dados">
-                <legend> Dados Pessoais</legend>
                 <div class="primeiro-nome">
                     <mat-form-field appearance="fill">
                         <mat-label>Nome</mat-label>
@@ -61,7 +60,6 @@
         </div>
         <div class="dados-academicos contain">
             <fieldset class="input-dados">
-                <legend> Dados Acadêmicos</legend>
                 <div class="ies">
                     <mat-form-field appearance="fill">
                         <mat-label>Instituição de Ensino Superior</mat-label>
@@ -117,8 +115,8 @@
             </div>
 
             <div class="container-buttons-nav">
-                <button class="button model-one">Voltar</button>
-                <button class="button model-two">Início</button>
+                <button class="button model-one" (click)="back()">Voltar</button>
+                <button class="button model-two" (click)="home()">Início</button>
             </div>
 
         </div>

@@ -1,1 +1,100 @@
-<p>pform works!</p>
+<div class="border">
+    <h1>Cadastro Professor</h1>
+    <div class="container">
+        <div class="dados-pessoais contain">
+            <fieldset class="input-dados">
+                <div class="primeiro-nome">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Nome</mat-label>
+                        <input matInput placeholder="">
+                    </mat-form-field>
+                </div>
+                <div class="sobrenome">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Sobrenome</mat-label>
+                        <input matInput placeholder="">
+                    </mat-form-field>
+                </div>
+                <div class="cpf">
+                    <mat-form-field appearance="fill">
+                        <mat-label>CPF</mat-label>
+                        <input matInput placeholder="000.000.000-00">
+                    </mat-form-field>
+                </div>
+                <div class="email">
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="anima@ulife.com.br">
+                    </mat-form-field>
+                </div>
+                <div class="telefone">
+                    <mat-form-field>
+                        <mat-label>Telefone</mat-label>
+                        <input matInput placeholder="+00 (00) 00000-0000">
+                    </mat-form-field>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="dados-academicos contain">
+            <fieldset class="input-dados">
+                <div class="ies">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Instituição de Ensino Superior</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="campus">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Campus</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="uc">
+                    <mat-form-field appearance="fill">
+                        <mat-label>UC</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="modalidade">
+                    <mat-form-field>
+                        <mat-label>Modalidade</mat-label>
+                        <mat-select>
+                            <mat-option value="Presencial">Presencial</mat-option>
+                            <mat-option value="Hibrido">Hibrido</mat-option>
+                            <mat-option value="Live">Live</mat-option>
+                            <mat-option value="EAD">EAD</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="horario">
+                    <mat-form-field>
+                        <mat-label>Horário</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="data">
+                    <mat-form-field>
+                        <mat-label>DD/MM/YYYY</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                </div>
+
+            </fieldset>
+        </div>
+
+        <div class="container-buttons">
+            <div class="container-input">
+                <p>Anexo</p>
+                <input type="file" name="" id="">
+                <button class="button model-one inscrever-me">ENVIAR</button>
+            </div>
+
+            <div class="container-buttons-nav">
+                <button class="button model-two" (click)="home()">Início</button>
+            </div>
+    </div>
+
+</div>
