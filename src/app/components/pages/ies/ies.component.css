@@ -3,7 +3,7 @@
   height: 309px;
   object-fit: cover;
   transition: .4s;
-  transform: scale(1.03);
+  transform: scale(1.06);
 }
 
 .logo-border {
@@ -13,7 +13,7 @@
 }
 
 .logo:hover {
-  transform: scale(1.07);
+  transform: scale(1.09);
 }
 
 .main {
