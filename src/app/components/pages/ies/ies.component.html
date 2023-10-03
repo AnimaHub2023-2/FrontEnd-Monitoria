@@ -9,8 +9,10 @@
       *ngFor="let campus of ies.instituicoes; let indexCampus = index"
       class="ies"
       (click)="goCampus(ies, indexCampus)"
-      >
-          <img src="{{ies.instituicoes[indexCampus].imagem}}" alt="{{ies.nome}}" class="logo">
+      >   
+          <div class="logo-border">
+            <img src="{{ies.instituicoes[indexCampus].imagem}}" alt="{{ies.nome}}" class="logo">
+          </div>
           <p>{{ies.instituicoes[indexCampus].nome}}</p>
       </div>
     </div>

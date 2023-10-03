@@ -1,13 +1,13 @@
 <div class="border">
   <div class="link">{{ies.nome.toUpperCase()}} / Campus {{ies.instituicoes[campusIndex].nome}} / {{cursoSelecionado.name}}</div>
   <div class="main">
-    <h2>Unidades Curriculares (UC) com vagas para monitoria no Curso de {{cursoSelecionado.name}} </h2>
+    <h1>Unidades Curriculares (UC) com vagas para monitoria no Curso de {{cursoSelecionado.name}} </h1>
 
     <div class="box-monitoria" >
       <div class="card-monitoria" *ngFor="let card of listMonitorias" (click)="goForm(card.id)">
-        <h5>
+        <h4>
           {{listMonitorias[card.id].curso}}
-        </h5>
+        </h4>
 
         <div>
           <p>

@@ -21,12 +21,31 @@
   flex-direction: column;
 }
 
+.cursos-text h1 {
+  color: var(--dark-green2);
+  font-size: 60px;
+  width: max-content;
+}
+
+.cursos-text p {
+  color: var(--font-dark-gray);
+  font-weight: 500;
+  font-size: 20px;
+  width: max-content;
+}
+
 h2 {
   color: var(--font-dark-gray);
 }
 
 h3 {
   color: var(--font-gray);
+  transition: .4s;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: var(--medium-green);
 }
 
 .list {

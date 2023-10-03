@@ -31,7 +31,15 @@ li {
 }
 
 a {
-    color: #000;
+    color: #fff;
+    text-shadow: 0px 3px 11px #000;
+    font-weight: 500;
+    transition: .4s;
+}
+
+a:hover {
+    color: #abd17d;
+    transform: scale(1.1);
 }
 
 .footer-logo-box {
@@ -41,11 +49,17 @@ a {
     justify-content: center;
 }
 
-.img-logo {
-    width: 291px;
-    height: 279px;
-    filter: invert(1);
+.footer-logo-box span {
+    color: #fff;
+    text-shadow: 0px 3px 11px #000;
 }
+
+.img-logo {
+    width: 221px;
+    height: 221px;
+}
+
+
 
 @media (max-width:860px ) {
     .footer-container {
