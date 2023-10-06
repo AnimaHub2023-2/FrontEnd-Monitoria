@@ -88,6 +88,16 @@ h3:hover {
   }
 }
 
+@media (max-width:860px) {
+  .cursos-text {
+    align-items: center;
+  }
+
+  .cursos-text h1 , .cursos-text p {
+    width: auto;
+  }
+}
+
 @media (max-width:560px) {
   .img-campus {
     width: 360px;
@@ -103,7 +113,17 @@ h3:hover {
   }
 }
 
-@media (max-width:420px) {
+@media (max-width:425px) {
+
+  .cursos-text h1 {
+    font-size: 45px;
+    width: auto;
+  }
+
+  .cursos-text p {
+    font-size: 15px;
+    width: auto;
+  }
 
   h2 {
     font-size: 16px;
