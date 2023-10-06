@@ -38,7 +38,7 @@ export class AformComponent {
 
     this.campusIndex = this.campusSelecionado.getCampusSelecionado()
     this.nome = this.ies.nome
-    this.campus = this.ies.instituicoes[0].nome
+    this.campus = this.ies.instituicoes[this.campusIndex].nome
     this.curso = this.getCurso.name
     console.log(`instituicoes/${this.nome}/${this.campus.toLowerCase()}/${this.curso.toLowerCase()}`)
   }
