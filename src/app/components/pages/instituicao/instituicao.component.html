@@ -3,9 +3,9 @@
     <div class="institutions-logo">
         <div
         class="list"
-        *ngFor="let ies of iesList"
+        *ngFor="let ies of instituicoes"
         (click)="onClick(ies.id, ies.nome)">
-            <img src="{{ies.logo}}" alt="{{ies}}">
+            <img src="{{ies.imgLogo}}" alt="{{ies}}">
         </div>
     </div>
 </div>

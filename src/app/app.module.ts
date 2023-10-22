@@ -30,6 +30,7 @@ import { PformComponent } from './components/pages/pform/pform.component';
 
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatNativeDateModule} from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -64,7 +65,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatIconModule,
     MatButtonModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
