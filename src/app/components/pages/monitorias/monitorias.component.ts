@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 const monitorias = [
   {
     id: 0,
-    curso: 'Modelagem de Software',
-    modelo: 'Online',
+    curso: 'Nome da UC - Exemplo',
+    modelo: 'Presencial',
     dia: 'Terça-feira',
     horario: 1900,
     professor: 'Mario Santos'
@@ -17,7 +17,7 @@ const monitorias = [
   {
     id: 1,
     curso: 'Exemplo de Monitoria',
-    modelo: 'Online',
+    modelo: 'Presencial',
     dia: 'Terça-feira',
     horario: 1900,
     professor: 'Mario Santos'
@@ -25,7 +25,7 @@ const monitorias = [
     {
     id: 2,
     curso: 'Outro Exemplo',
-    modelo: 'Online',
+    modelo: 'Presencial',
     dia: 'Terça-feira',
     horario: 1900,
     professor: 'Mario Santos'
