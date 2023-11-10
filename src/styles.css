@@ -32,6 +32,18 @@ a {
     --black: #000
 }
 
+/* scroll style */
+::-webkit-scrollbar {
+  background: #fff;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00716D;
+  border-radius: 4px;
+}
+
+
 /* borda padrão pag, contato, e outros */
 
 .border {

@@ -30,6 +30,7 @@ import { PformComponent } from './components/pages/pform/pform.component';
 
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatNativeDateModule} from '@angular/material/core';
+import { ModalAformComponent } from './components/modal-aform/modal-aform.component';
 
 
 
@@ -52,6 +53,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     CursosComponent,
     MonitoriasComponent,
     PformComponent,
+    ModalAformComponent,
 
   ],
   imports: [

@@ -1,0 +1,69 @@
+
+/* modal beta */
+
+.glass-modal.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.glass-modal {
+  width: 100%;
+  height: calc( 100vh + 239px);
+  position: absolute;
+  z-index: 999;
+
+  background-color: rgba(99, 99, 99, 0.438);
+
+  top: 0;
+  left: 0;
+
+  display: none;
+
+}
+
+.void {
+  height: 239px;
+  width: 100%;
+}
+
+.box-modal {
+  width: 600px;
+  height: 400px;
+  background: linear-gradient(180deg, rgba(180,243,160,1) 0%, rgba(174,244,195,1) 50%, rgba(180,243,160,1) 100%);
+  border: 2px solid var(--dark-green);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  gap: 30px;
+
+  padding: 30px;
+
+}
+
+.box-modal h1 {
+  color: var(--dark-green);
+}
+
+.box-modal div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box-modal div p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--font-dark-gray);
+  width: 80%;
+}
