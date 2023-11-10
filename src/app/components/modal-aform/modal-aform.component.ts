@@ -23,7 +23,6 @@ export class ModalAformComponent {
 
     button?.addEventListener('click', this.modalOpen)
 
-    this.modalOpen()
   }
 
 }
