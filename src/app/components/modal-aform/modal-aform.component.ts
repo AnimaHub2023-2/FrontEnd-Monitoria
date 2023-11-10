@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal-aform',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal-aform.component.css']
 })
 export class ModalAformComponent {
+
+  constructor(
+    private router: Router,
+  ) {}
+
 
   modalOpen() {
     const boxCam = document.getElementById('glass-modal')!
@@ -15,13 +21,23 @@ export class ModalAformComponent {
         boxCam.classList.remove('open')
         localStorage['fechaModal'] = 'box-cam'
     }
+
     })
+
   }
 
   ngOnInit() {
     const button = document.getElementById('buttonEnviar')
 
-    button?.addEventListener('click', this.modalOpen)
+    button?.addEventListener('click', () => {
+      this.modalOpen()
+      setTimeout(() => {
+        this.router.navigate([''])
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }, 8000);
+    })
+
 
   }
 
