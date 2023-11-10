@@ -10,26 +10,25 @@
 
 .glass-modal {
   width: 100%;
-  height: calc( 100vh + 239px);
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   z-index: 999;
 
-  background-color: rgba(99, 99, 99, 0.438);
 
-  top: 0;
+
+  top: 50%;
   left: 0;
 
   display: none;
 
-}
-
-.void {
-  height: 239px;
-  width: 100%;
+  transform: translateY(-50%);
+  background-color: rgba(61, 61, 61, 0.589);
+  backdrop-filter: blur(3px);
 }
 
 .box-modal {
-  width: 600px;
+  width: 80%;
+  max-width: 600px;
   height: 400px;
   background: linear-gradient(180deg, rgba(180,243,160,1) 0%, rgba(174,244,195,1) 50%, rgba(180,243,160,1) 100%);
   border: 2px solid var(--dark-green);
@@ -66,4 +65,24 @@
   font-weight: 600;
   color: var(--font-dark-gray);
   width: 80%;
+}
+
+@media (max-width:500px) {
+  .box-modal h1 {
+    font-size: 22px;
+  }
+
+  .box-modal div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .box-modal div p {
+    font-size: 15px;
+    width: 100%;
+}
+
 }

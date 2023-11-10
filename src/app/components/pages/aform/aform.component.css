@@ -1,6 +1,7 @@
 .border {
   text-align: center;
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .link {
