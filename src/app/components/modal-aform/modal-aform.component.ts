@@ -31,14 +31,14 @@ export class ModalAformComponent {
 
     button?.addEventListener('click', () => {
       this.modalOpen()
-      setTimeout(() => {
+      const buttonExit = document.getElementById('exit')
+
+      buttonExit?.addEventListener('click', () => {
         this.router.navigate([''])
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-      }, 8000);
+      })
     })
-
-
   }
 
 }

@@ -46,7 +46,7 @@ export class AformComponent {
   back() {
     this.router.navigate([
       `/instituicoes/${this.nome}/${this.campus.toLowerCase()}/${this.curso.toLowerCase()}`
-    ]) 
+    ])
   }
 
   home() {
