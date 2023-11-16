@@ -28,7 +28,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Arquitetura', id: 0 },
       { name: 'Design de Interiores', id: 1 },
-      { name: 'Design Gráfico', id: 2 }
+      { name: 'Design Gráfico', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -37,7 +38,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Agronomia', id: 0 },
       { name: 'Gestão Ambiental', id: 1 },
-      { name: 'Engenharia Florestal', id: 2 }
+      { name: 'Engenharia Florestal', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -46,7 +48,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Biomedicina', id: 0 },
       { name: 'Medicina', id: 1 },
-      { name: 'Enfermagem', id: 2 }
+      { name: 'Enfermagem', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -55,7 +58,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'História', id: 0 },
       { name: 'Psicologia', id: 1 },
-      { name: 'Sociologia', id: 2 }
+      { name: 'Sociologia', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -64,7 +68,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Direito', id: 0 },
       { name: 'Ciências Criminais', id: 1 },
-      { name: 'Relações Internacionais', id: 2 }
+      { name: 'Relações Internacionais', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -73,7 +78,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Medicina', id: 0 },
       { name: 'Odontologia', id: 1 },
-      { name: 'Fisioterapia', id: 2 }
+      { name: 'Fisioterapia', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -82,7 +88,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Jornalismo', id: 0 },
       { name: 'Publicidade', id: 1 },
-      { name: 'Cinema', id: 2 }
+      { name: 'Cinema', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -91,7 +98,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Engenharia Civil', id: 0 },
       { name: 'Engenharia Elétrica', id: 1 },
-      { name: 'Engenharia de Software', id: 2 }
+      { name: 'Engenharia de Software', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -100,7 +108,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Administração', id: 0 },
       { name: 'Gestão de Recursos Humanos', id: 1 },
-      { name: 'Marketing', id: 2 }
+      { name: 'Marketing', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -109,7 +118,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Ciência da Computação', id: 0 },
       { name: 'Engenharia de Software', id: 1 },
-      { name: 'Sistemas de Informação', id: 2 }
+      { name: 'Sistemas de Informação', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   },
   {
@@ -118,7 +128,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       { name: 'Gestão em Turismo', id: 0 },
       { name: 'Hotelaria', id: 1 },
-      { name: 'Eventos', id: 2 }
+      { name: 'Eventos', id: 2 },
+      { name: 'Outro', id: 3 }
     ]
   }
 ];

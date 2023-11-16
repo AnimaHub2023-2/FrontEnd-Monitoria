@@ -31,6 +31,7 @@ import { PformComponent } from './components/pages/pform/pform.component';
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatNativeDateModule} from '@angular/material/core';
 import { ModalAformComponent } from './components/modal-aform/modal-aform.component';
+import { EmailSendComponent } from './components/email-send/email-send.component';
 
 
 
@@ -54,6 +55,7 @@ import { ModalAformComponent } from './components/modal-aform/modal-aform.compon
     MonitoriasComponent,
     PformComponent,
     ModalAformComponent,
+    EmailSendComponent,
 
   ],
   imports: [
