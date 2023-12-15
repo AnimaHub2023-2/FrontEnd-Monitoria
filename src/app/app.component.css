@@ -1,7 +1,6 @@
 .box-contain {
     min-height: 64vh;
     background: linear-gradient(180deg, rgba(180,243,160,1) 0%, rgba(169,244,223,1) 48%, rgba(180,243,160,1) 100%);
-    /* background-color: aqua; */
 }
 
 @media (max-width:660px) {

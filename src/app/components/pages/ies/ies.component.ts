@@ -22,9 +22,6 @@ export class IesComponent {
   }
 
   goCampus(ies:any, indexCampus:any) {
-    console.log('Campus Selecionado = ' + ies.instituicoes[indexCampus].nome,)
-    console.log('Posição do Campus Selecionado = ' + indexCampus)
-
     this.campusService.setCampusSelecionado(indexCampus)
     this.router.navigate([`instituicoes/${this.ies.nome}/${ies.instituicoes[indexCampus].nome.toLowerCase()}`])
 

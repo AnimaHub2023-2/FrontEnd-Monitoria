@@ -30,63 +30,6 @@ const monitorias = [
     horario: 1900,
     professor: 'Mario Santos'
     }
-  // ,
-  //   {
-  //   id: 3,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
-  //   {
-  //   id: 4,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
-  //   {
-  //   id: 5,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
-  // {
-  //   id: 6,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
-  // {
-  //   id: 7,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
-  // {
-  //   id: 8,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
-  // {
-  //   id: 9,
-  //   curso: 'Modelagem de Software',
-  //   modelo: 'Online',
-  //   dia: 'Terça-feira',
-  //   horario: 1900,
-  //   professor: 'Mario Santos'
-  // },
 ]
 @Component({
   selector: 'app-monitorias',

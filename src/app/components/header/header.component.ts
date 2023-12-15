@@ -29,16 +29,4 @@ export class HeaderComponent {
     botao?.classList.toggle('open')
 
   }
-
-  // // Clique fora do menu, para fechá-lo
-
-  // @HostListener('document:click', ['$event'])
-  // onClickOutside(event: MouseEvent) {
-  //   const targetElement = event.target as HTMLElement
-  //   const menuElement = document.querySelector('menu')
-
-  //   if (menuElement && !menuElement.contains(targetElement)) {
-  //     this.show = false // Fecha o menu quando o clique ocorre fora dele
-  //   }
-  // }
 }

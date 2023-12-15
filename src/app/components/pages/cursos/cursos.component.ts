@@ -139,8 +139,6 @@ const icons = [
     icon: "../../../../assets/Icons/icone_arquitetura.svg"
   },
   {
-    // acho q esse icon agro na vdd é icon de erro
-    // icon: "../../../../assets/Icons/icone_agro.svg"
     icon: "../../../../assets/Icons/icone_arquitetura.svg"
   },
   {
@@ -206,9 +204,6 @@ export class CursosComponent {
   )
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
-
-  //tree end
-
   ies: any
   index!: any
   nodeId!: number
@@ -226,19 +221,13 @@ export class CursosComponent {
     this.dataSource.data = TREE_DATA;
     this.index = this.campusService.getCampusSelecionado()
     this.ies = this.iesService.getIesSelecionada()
-
-    console.log('Cursos disponiveis no campus ' + this.ies.instituicoes[this.index].nome)
-    console.log(this.dataSource.data)
   }
 
   clickH2(node: any) {
-    console.log('Id da area de cursos selecionado = ' + node.id)
     this.nodeId = node.id
   }
 
   click(cursoId: any, nodeName: string) {
-    console.log('Id do curso selecionado = ' + cursoId)
-    console.log('Curso Selecionado = ' + nodeName)
     this.router.navigate([`instituicoes/${this.ies.nome}/${this.ies.instituicoes[this.index].nome.toLowerCase()}/${this.dataSource.data[this.nodeId].children![cursoId].name.toLowerCase()}`])
     this.cursoService.setCursoSelecionado(this.dataSource.data[this.nodeId].children![cursoId])
 

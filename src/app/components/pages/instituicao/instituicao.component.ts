@@ -474,9 +474,6 @@ export class InstituicaoComponent {
   onClick(id:number, nome:string):void {
     const iesEnviar = this.iesList[id]
 
-    console.log('ies Selecionada abaixo')
-    console.log(iesEnviar)
-
     this.iesService.setIesSelecionada(iesEnviar)
 
     this.router.navigate([`instituicoes/${nome}`])

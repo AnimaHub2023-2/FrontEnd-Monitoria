@@ -40,7 +40,6 @@ export class AformComponent {
     this.nome = this.ies.nome
     this.campus = this.ies.instituicoes[this.campusIndex].nome
     this.curso = this.getCurso.name
-    console.log(`instituicoes/${this.nome}/${this.campus.toLowerCase()}/${this.curso.toLowerCase()}`)
   }
 
   back() {

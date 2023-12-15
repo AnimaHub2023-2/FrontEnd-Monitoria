@@ -45,14 +45,11 @@ a {
 
 
 /* borda padrão pag, contato, e outros */
-
 .border {
     padding: 40px 50px;
     background: var(--background-linear-green);
     min-height: 65vh;
 }
-
-
 
 .main {
     background-color: var(--white);
@@ -69,20 +66,11 @@ a {
     .main {
         border-radius: 0;
         padding: 50px 0;
-
     }
 
 }
 
-@media (max-width:480px) {
-
-  /* .main {
-    padding: 50px 30px;
-  } */
-}
-
 /* BOTÕES PADRÃO */
-
 .button {
     width: 135px;
     height: 50px;
